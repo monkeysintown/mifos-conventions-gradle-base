@@ -1,0 +1,16 @@
+dependencies {
+    implementation platform("com.fasterxml.jackson:jackson-bom:2.22.2")
+    implementation platform("tools.jackson:jackson-bom:3.2.2")
+
+    constraints {
+        implementation "org.json:json:20260814"
+
+        implementation "io.gsonfire:gson-fire:1.9.0"
+
+        implementation "com.google.code.gson:gson:2.14.0"
+
+        implementation "com.googlecode.json-simple:json-simple:1.1.1"
+
+        implementation "com.dashjoin:jsonata:0.9.10"
+    }
+}

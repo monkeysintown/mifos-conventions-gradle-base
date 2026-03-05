@@ -1,0 +1,52 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Util"
+
+dependencies {
+    api platform("com.google.guava:guava-bom:33.7.1-jre")
+
+    // NOTE: do not touch, another plugin dependens on this version
+    // api platform("com.google.inject:guice-bom:7.0.0")
+
+    api platform("org.immutables:bom:2.12.2")
+
+    api platform("org.ow2.asm:asm-bom:9.10.1")
+
+    api "io.github.classgraph:classgraph:4.8.193"
+
+    api "org.javassist:javassist:3.32.0-GA"
+
+    api "net.bytebuddy:byte-buddy:1.18.12"
+
+    api "org.codehaus.janino:janino:3.1.12"
+
+    api "net.java.dev.jna:jna:5.19.1"
+
+    api "org.reflections:reflections:0.10.2"
+
+    api "com.github.f4b6a3:uuid-creator:6.1.1"
+
+    api "com.fasterxml.uuid:java-uuid-generator:5.2.0"
+
+    api "org.projectlombok:lombok:1.18.46"
+
+    api "io.soabase.record-builder:record-builder-core:53"
+
+    api "com.github.therapi:therapi-runtime-javadoc:0.15.0"
+    api "com.github.therapi:therapi-runtime-javadoc-scribe:0.15.0"
+
+    api "net.lingala.zip4j:zip4j:2.11.6"
+
+    api "com.google.zxing:javase:3.5.4"
+
+    api "org.semver4j:semver4j:6.0.0"
+
+    api "com.mooltiverse.oss.nyx:version:3.1.4"
+
+    api "io.github.java-diff-utils:java-diff-utils:4.17"
+
+    api "org.eclipse.jgit:org.eclipse.jgit:7.7.1.202607240634-r"
+    api "org.eclipse.jgit:org.eclipse.jgit.ssh.jsch:7.7.1.202607240634-r"
+}

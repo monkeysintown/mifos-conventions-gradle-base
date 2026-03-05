@@ -1,0 +1,5 @@
+plugins {
+    id "org.mifos.conventions.gradle.base.core.java"
+    id "groovy-gradle-plugin"
+    id "java-gradle-plugin"
+}

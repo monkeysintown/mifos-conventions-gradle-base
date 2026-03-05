@@ -1,0 +1,11 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.plugin"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - Template"
+
+group = "org.mifos.conventions"
+
+dependencies {
+    api project(":mifos-conventions-gradle-base-plugin")
+}

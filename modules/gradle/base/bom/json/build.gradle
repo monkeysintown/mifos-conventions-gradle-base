@@ -1,0 +1,20 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - JSON"
+
+dependencies {
+    api platform("com.fasterxml.jackson:jackson-bom:2.22.2")
+    api platform("tools.jackson:jackson-bom:3.2.2")
+
+    api "org.json:json:20260814"
+
+    api "io.gsonfire:gson-fire:1.9.0"
+
+    api "com.google.code.gson:gson:2.14.0"
+
+    api "com.googlecode.json-simple:json-simple:1.1.1"
+
+    api "com.dashjoin:jsonata:0.9.10"
+}
