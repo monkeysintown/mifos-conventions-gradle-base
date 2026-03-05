@@ -1,0 +1,19 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - [TBD]"
+
+dependencies {
+    api platform("dev.tamboui:tamboui-bom:0.4.0")
+
+    api "info.picocli:picocli:4.7.7"
+    api "info.picocli:picocli-codegen:4.7.7"
+    api "info.picocli:picocli-spring-boot-starter:4.7.7"
+    api "info.picocli:picocli-shell-jline2:4.7.7"
+    api "info.picocli:picocli-shell-jline3:4.7.7"
+    api "info.picocli:picocli-groovy:4.7.7"
+
+    api "io.github.crramirez:casciian:1.6.0"
+    api "io.github.crramirez:casciian-spring-boot-starter:1.1.0"
+}

@@ -1,0 +1,22 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - [TBD]"
+
+dependencies {
+    api "com.twilio.sdk:twilio:12.1.1"
+
+    api "com.github.dikhan:pagerduty-client:3.1.2"
+
+    api "systems.comodal:pagerduty-event-json-iterator-adapter:0.10.1"
+    api "systems.comodal:pagerduty-event-client:0.10.1"
+
+    api "com.mypurecloud:platform-client-v2:259.0.0"
+
+    api "com.hubspot:NioSmtpClient:1.2.3"
+
+    api "com.slack.api:slack-api-client:1.50.0"
+
+    api "io.vertx:vertx-mail-client:5.1.6"
+}

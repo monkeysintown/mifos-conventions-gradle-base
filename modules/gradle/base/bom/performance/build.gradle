@@ -1,0 +1,11 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - [TBD]"
+
+dependencies {
+    api platform("net.openhft:chronicle-bom:2026.22")
+
+    api "com.lmax:disruptor:4.0.0"
+}

@@ -1,0 +1,8 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.plugin"
+}
+
+group = "org.mifos.conventions"
+
+description = "Mifos Initiative - Gradle Conventions - Project - Documentation"
+description = "Mifos Initiative - Conventions - Gradle - Base - Doc"

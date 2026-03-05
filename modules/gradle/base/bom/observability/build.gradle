@@ -1,0 +1,13 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - [TBD]"
+
+dependencies {
+    // api platform("io.micrometer:micrometer-bom:1.16.1")
+
+    api platform("io.opentelemetry:opentelemetry-bom:1.65.0")
+
+    api "io.prometheus:simpleclient_pushgateway:0.16.0"
+}

@@ -1,0 +1,21 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - [TBD]"
+
+dependencies {
+    api platform("tech.uom.lib:uom-lib:2.2")
+
+    api "tech.uom.lib:uom-lib-jackson:2.2"
+    api "tech.uom.lib:uom-lib-yasson:2.2"
+    api "tech.uom.lib:uom-lib-assertj:2.2"
+
+    api "tech.units:indriya:2.2.4"
+    api "javax.measure:unit-api:2.2"
+
+    api "systems.uom:systems-unicode:2.2"
+    api "systems.uom:systems-ucum:2.2"
+    api "systems.uom:systems-quantity:2.2"
+    api "systems.uom:systems-common:2.2"
+}

@@ -1,0 +1,9 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - [TBD]"
+
+dependencies {
+    api platform("io.cloudevents:cloudevents-bom:5.0.0")
+}

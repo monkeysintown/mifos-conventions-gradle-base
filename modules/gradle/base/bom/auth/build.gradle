@@ -1,0 +1,17 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - [TBD]"
+
+dependencies {
+    api platform("org.keycloak.bom:keycloak-spi-bom:26.7.1")
+    api platform("org.keycloak.bom:keycloak-adapter-bom:25.0.6")
+    api platform("org.keycloak.bom:keycloak-misc-bom:25.0.6")
+
+    api "org.keycloak:keycloak-admin-client:26.0.12"
+
+    api "org.keycloak:keycloak-services:26.7.1"
+
+    api "org.keycloak:keycloak-server-spi-private:26.7.1"
+}

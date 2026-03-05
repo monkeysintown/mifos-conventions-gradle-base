@@ -1,0 +1,9 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - [TBD]"
+
+dependencies {
+    api platform("systems.manifold:manifold-deps-parent:2026.1.12")
+}

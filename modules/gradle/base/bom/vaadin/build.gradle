@@ -1,0 +1,20 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - [TBD]"
+
+repositories {
+    maven {
+        url = "https://maven.vaadin.com/vaadin-prereleases"
+    }
+    maven {
+        url = "https://maven.vaadin.com/vaadin-addons"
+    }
+
+    dependencies {
+        api platform("com.vaadin:vaadin-bom:25.2.5")
+
+        api "org.parttio:line-awesome:2.1.0"
+    }
+}

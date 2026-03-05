@@ -1,0 +1,22 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - [TBD]"
+
+dependencies {
+    api "io.pebbletemplates:pebble:4.1.2"
+    api "io.pebbletemplates:pebble-spring-boot-starter:4.1.2"
+
+    api "com.github.jknack:handlebars.java:4.5.4"
+    api "com.github.jknack:handlebars:4.5.4"
+    api "com.github.jknack:handlebars-guava-cache:4.5.4"
+    api "com.github.jknack:handlebars-helpers:4.5.4"
+    api "com.github.jknack:handlebars-jackson:4.5.4"
+    api "com.github.jknack:handlebars-proto:4.3.1"
+    api "com.github.jknack:handlebars-humanize:4.3.1"
+    api "com.github.jknack:handlebars-markdown:4.2.1"
+
+    api "com.github.mfornos:humanize-slim:1.2.2"
+    api "com.github.mfornos:humanize-icu:1.2.2"
+}

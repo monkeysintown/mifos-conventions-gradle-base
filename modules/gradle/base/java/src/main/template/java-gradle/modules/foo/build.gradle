@@ -1,0 +1,5 @@
+plugins {
+    id "org.mifos.conventions.gradle.java"
+}
+
+description = "Mifos Initiative - Dummy"

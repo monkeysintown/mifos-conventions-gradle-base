@@ -1,0 +1,71 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - [TBD]"
+
+repositories {
+    maven {
+        url = "https://repo.spring.io/snapshot"
+    }
+
+    configurations.all {
+        exclude group: "commons-logging", module: "commons-logging"
+        exclude group: "org.apache.logging.log4j", module: "log4j-slf4j2-impl"
+    }
+
+    dependencies {
+        api platform("org.springframework:spring-framework-bom:7.0.8")
+
+        api platform("org.springframework.boot:spring-boot-dependencies:4.1.0")
+
+        api platform("org.springframework.shell:spring-shell-dependencies:4.0.3")
+
+        api platform("org.springframework.security:spring-security-bom:7.1.0")
+
+        api platform("org.springframework.data:spring-data-bom:2026.0.0")
+
+        api platform("org.springframework.modulith:spring-modulith-bom:2.1.0")
+
+        api platform("org.springframework.grpc:spring-grpc-build-dependencies:1.1.0")
+
+        api platform("io.awspring.cloud:spring-cloud-aws-dependencies:4.1.0")
+
+        api platform("org.springframework.cloud:spring-cloud-dependencies:2025.1.2") {
+            exclude group: "org.eclipse.jgit", module: "org.eclipse.jgit"
+        }
+
+        api platform("org.springframework.restdocs:spring-restdocs-bom:4.0.1")
+
+        api platform("org.springdoc:springdoc-openapi-bom:3.1.0")
+
+        api platform("io.rsocket:rsocket-bom:1.1.5")
+
+        api platform("io.projectreactor:reactor-bom:2025.0.6")
+
+        api platform("io.github.resilience4j:resilience4j-bom:2.4.0")
+
+        api "org.springframework.graphql:spring-graphql:2.0.4"
+
+        api "de.codecentric:spring-boot-admin-server:4.1.2"
+        api "de.codecentric:spring-boot-admin-server-ui:4.1.2"
+
+        api "io.projectreactor.tools:blockhound:1.0.17.RELEASE"
+        api "io.projectreactor.tools:blockhound-junit-platform:1.0.17.RELEASE"
+
+        api "io.github.springwolf:springwolf-ui:2.6.0"
+        api "io.github.springwolf:springwolf-kafka:2.6.0"
+        api "io.github.springwolf:springwolf-amqp:2.6.0"
+        api "io.github.springwolf:springwolf-cloud-stream:2.6.0"
+        api "io.github.springwolf:springwolf-sns:2.6.0"
+        api "io.github.springwolf:springwolf-sqs:2.6.0"
+        api "io.github.springwolf:springwolf-jms:2.6.0"
+        api "io.github.springwolf:springwolf-common-model-converters:2.6.0"
+        api "io.github.springwolf:springwolf-json-schema:2.6.0"
+        api "io.github.springwolf:springwolf-generic-binding:2.6.0"
+        api "io.github.springwolf:springwolf-amqp-binding:2.6.0"
+        api "io.github.springwolf:springwolf-googlepubsub-binding:2.6.0"
+        api "io.github.springwolf:springwolf-core:2.6.0"
+        api "io.github.springwolf:springwolf-asyncapi:2.6.0"
+    }
+}

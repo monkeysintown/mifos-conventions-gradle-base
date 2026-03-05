@@ -1,0 +1,30 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - [TBD]"
+
+dependencies {
+    api "org.bouncycastle:bcpkix-jdk18on:1.85"
+    api "org.bouncycastle:bcmail-jdk18on:1.85"
+    api "org.bouncycastle:bcpg-jdk18on:1.85"
+    api "org.bouncycastle:bcprov-jdk18on:1.85.2"
+    api "org.bouncycastle:bcjmail-debug-jdk15to18:1.85"
+    api "org.bouncycastle:bcjmail-debug-jdk18on:1.85"
+    api "org.bouncycastle:bcjmail-jdk15to18:1.85"
+    api "org.bouncycastle:bcjmail-jdk18on:1.85"
+    api "org.bouncycastle:bcjmail-lts8on:2.73.12"
+    api "org.bouncycastle:bcmail-lts8on:2.73.12"
+    api "org.bouncycastle:bcpg-lts8on:2.73.12"
+    api "org.bouncycastle:bcpkix-lts8on:2.73.12"
+    api "org.bouncycastle:bctls-lts8on:2.73.12"
+    api "org.bouncycastle:bcutil-lts8on:2.73.12"
+    api "org.bouncycastle:bctls-fips:2.1.24"
+
+    api "at.favre.lib:bcrypt:0.10.2"
+    api "at.favre.lib:bytes:1.6.1"
+
+    api "org.jasypt:jasypt:1.9.3"
+
+    api "org.passay:passay:2.0.0"
+}

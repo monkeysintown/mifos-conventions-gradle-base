@@ -1,0 +1,109 @@
+plugins {
+    id "base"
+    // id "io.freefair.aggregate-javadoc"
+    id "pl.allegro.tech.build.axion-release"
+    id "com.palantir.java-format-idea"
+    id "no.f12.code-navigator"
+}
+
+scmVersion {
+    tag {
+        prefix = "v"
+        versionSeparator = ""
+    }
+    nextVersion {
+        suffix = "alpha"
+        separator = "-"
+    }
+
+    branchVersionIncrementer = [
+            "main": { context ->
+                // Stable: use tag exactly as-is (e.g., 1.2.0)
+                context.currentVersion
+            },
+            "dev": { context ->
+                // Dev: append -SNAPSHOT (e.g., 1.3.0-SNAPSHOT)
+                "${context.currentVersion}-SNAPSHOT"
+            },
+            "alpha/.*": { context ->
+                // Alpha: tag-alpha.<commits-since-tag>
+                "${context.currentVersion}-alpha.${context.scmPosition.distance}"
+            },
+            "beta/.*": { context ->
+                "${context.currentVersion}-beta.${context.scmPosition.distance}"
+            },
+            "rc/.*": { context ->
+                "${context.currentVersion}-rc.${context.scmPosition.distance}"
+            }
+    ]
+
+    checks {
+        uncommittedChanges = true
+        aheadOfRemote = true
+        snapshotDependencies = true
+    }
+
+    localOnly = false
+    // pushTagsOnly = false
+}
+
+version = scmVersion.version
+
+configurations {
+    mifosConfig {
+        description = "Mifos Shared Configurations"
+    }
+}
+
+// TODO: define this in the base projects, better for caching to avoid "subprojects"
+/*
+subprojects {
+    version = rootProject.version
+}
+*/
+
+repositories {
+    mavenLocal()
+    maven {
+        url = uri("https://mifos.jfrog.io/artifactory/mifosx-gradle-local")
+    }
+    mavenCentral().content {
+        excludeModule("javax.media", "jai_core")
+    }
+    maven {
+        url = uri("https://central.sonatype.com/repository/maven-snapshots")
+    }
+}
+
+dependencies {
+    mifosConfig "org.mifos.conventions:mifos-conventions-gradle-config-asciidoc:0.1.0-SNAPSHOT:config@zip"
+    mifosConfig "org.mifos.conventions:mifos-conventions-gradle-config-checkstyle:0.1.0-SNAPSHOT:config@zip"
+    mifosConfig "org.mifos.conventions:mifos-conventions-gradle-config-compose:0.1.0-SNAPSHOT:config@zip"
+    mifosConfig "org.mifos.conventions:mifos-conventions-gradle-config-docker:0.1.0-SNAPSHOT:config@zip"
+    mifosConfig "org.mifos.conventions:mifos-conventions-gradle-config-eclipse:0.1.0-SNAPSHOT:config@zip"
+    mifosConfig "org.mifos.conventions:mifos-conventions-gradle-config-env:0.1.0-SNAPSHOT:config@zip"
+    mifosConfig "org.mifos.conventions:mifos-conventions-gradle-config-jqassistant:0.1.0-SNAPSHOT:config@zip"
+    mifosConfig "org.mifos.conventions:mifos-conventions-gradle-config-jreleaser:0.1.0-SNAPSHOT:config@zip"
+    mifosConfig "org.mifos.conventions:mifos-conventions-gradle-config-licenses:0.1.0-SNAPSHOT:config@zip"
+    mifosConfig "org.mifos.conventions:mifos-conventions-gradle-config-localstack:0.1.0-SNAPSHOT:config@zip"
+    mifosConfig "org.mifos.conventions:mifos-conventions-gradle-config-lombok:0.1.0-SNAPSHOT:config@zip"
+    mifosConfig "org.mifos.conventions:mifos-conventions-gradle-config-plantuml:0.1.0-SNAPSHOT:config@zip"
+    mifosConfig "org.mifos.conventions:mifos-conventions-gradle-config-postgresql:0.1.0-SNAPSHOT:config@zip"
+    mifosConfig "org.mifos.conventions:mifos-conventions-gradle-config-spotbugs:0.1.0-SNAPSHOT:config@zip"
+}
+
+tasks.register("mifosConfigUnzip", Sync) {
+    group = "mifos"
+    description = "Unzip Common Mifos Build Configuration"
+
+    shouldRunAfter(clean)
+
+    var destDir = rootProject.layout.projectDirectory.dir(".mifos")
+    onlyIf { !destDir.asFile.exists() }
+
+    // from zipTree(configurations.mifosConfig.singleFile)
+    configurations.mifosConfig.asFileTree.each { configZip ->
+        from zipTree(configZip)
+    }
+    into destDir
+}

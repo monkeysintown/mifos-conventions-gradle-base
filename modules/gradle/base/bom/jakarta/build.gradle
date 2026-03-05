@@ -1,0 +1,46 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - [TBD]"
+
+dependencies {
+    api platform("org.glassfish.jaxb:jaxb-bom:4.0.9")
+
+    api platform("org.glassfish.hk2:hk2:4.0.1") {
+        exclude group: "com.google.inject", module: "guice"
+        exclude group: "junit", module: "junit"
+    }
+    api platform("org.glassfish.jersey:jersey-bom:4.0.2")
+
+    api platform("org.apache.cxf:cxf-bom:4.2.3")
+
+    api platform("com.sun.xml.bind:jaxb-bom-ext:4.0.6")
+
+    api "jakarta.servlet:jakarta.servlet-api:6.1.0"
+
+    api "jakarta.annotation:jakarta.annotation-api:3.0.0"
+    api "javax.annotation:javax.annotation-api:1.3.2" // NOTE: just for compatibility with GRPC code generator
+
+    api "jakarta.xml.bind:jakarta.xml.bind-api:4.0.5"
+
+    api "com.sun.activation:jakarta.activation:2.0.1"
+    api "com.sun.mail:jakarta.mail:2.0.2"
+
+    api "jakarta.activation:jakarta.activation-api:2.1.3"
+
+    api "org.eclipse.angus:angus-core:2.0.5"
+    api "org.eclipse.angus:angus-activation:2.0.3"
+    api "org.eclipse.angus:angus-mail:2.0.5"
+
+    api "org.apache.cxf.xjc-utils:xjc-utils:4.2.0"
+    api "org.apache.cxf.xjc-utils:cxf-xjc-runtime:4.2.0"
+    api "org.apache.cxf.xjc.plugins:cxf-xjc-javadoc:4.2.0"
+    api "org.apache.cxf.xjc.plugins:cxf-xjc-bug986:4.2.0"
+    api "org.apache.cxf.xjc.plugins:cxf-xjc-bug671:4.2.0"
+    api "org.apache.cxf.xjc.plugins:cxf-xjc-wsdlextension:4.2.0"
+    api "org.apache.cxf.xjc.plugins:cxf-xjc-boolean:4.2.0"
+    api "org.apache.cxf.xjc.plugins:cxf-xjc-ts:4.2.0"
+    api "org.apache.cxf.xjc.plugins:cxf-xjc-dv:4.2.0"
+    api "org.apache.cxf.xjc.plugins:cxf-xjc-boolean-test:4.2.0"
+}
