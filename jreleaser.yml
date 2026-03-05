@@ -1,0 +1,122 @@
+#
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not
+# distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+
+project:
+  name: "mifos-conventions-gradle"
+  version: "0.1.0-SNAPSHOT"
+  license: "MPL-2.0"
+  inceptionYear: "2026"
+  vendor: "Mifos Initiative"
+  copyright: "Copyright (c) 2026 Mifos Initiative"
+  authors:
+    - "Aleksandar Vidakovic"
+  links:
+    bugTracker: "https://mifosforge.jira.com"
+    contribute: "https://mifos.org"
+    documentation: "https://docs.mifos.org"
+    donation: "https://mifos.org/take-action/donation-options"
+    faq: "https://mifos.org/resources/support"
+    contact: "https://mifos.org/about-us/contact-us"
+
+signing:
+  pgp:
+    active: ALWAYS
+    armored: true
+
+catalog:
+  sbom:
+    syft:
+      active: ALWAYS
+  swid:
+    mifos:
+      active: ALWAYS
+
+release:
+  github:
+    enabled: true
+    # TODO: change this to "openmf"!
+    owner: "monkeysintown"
+    tagName: v{{projectVersion}}
+    overwrite: true
+    commitAuthor:
+      name: "Aleksandar Vidakovic"
+      email: "aleks@mifos.org"
+
+deploy:
+  maven:
+    artifactory:
+      mifos:
+        active: ALWAYS
+        url: "https://mifos.jfrog.io/artifactory/mifosx-gradle-local"
+        authorization: BEARER
+        snapshotSupported: true
+        applyMavenCentralRules: false
+        stagingRepositories:
+          - "modules/gradle/base/core/build/staging-deploy"
+          - "modules/gradle/base/dependencies/build/staging-deploy"
+          - "modules/gradle/base/doc/build/staging-deploy"
+          - "modules/gradle/base/java/build/staging-deploy"
+          - "modules/gradle/base/plugin/build/staging-deploy"
+          - "modules/gradle/base/bom/ai/build/staging-deploy"
+          - "modules/gradle/base/bom/amazon/build/staging-deploy"
+          - "modules/gradle/base/bom/auth/build/staging-deploy"
+          - "modules/gradle/base/bom/automation/build/staging-deploy"
+          - "modules/gradle/base/bom/cache/build/staging-deploy"
+          - "modules/gradle/base/bom/camel/build/staging-deploy"
+          - "modules/gradle/base/bom/cep/build/staging-deploy"
+          - "modules/gradle/base/bom/check/build/staging-deploy"
+          - "modules/gradle/base/bom/cli/build/staging-deploy"
+          - "modules/gradle/base/bom/cloudevents/build/staging-deploy"
+          - "modules/gradle/base/bom/collections/build/staging-deploy"
+          - "modules/gradle/base/bom/commons/build/staging-deploy"
+          - "modules/gradle/base/bom/cryptography/build/staging-deploy"
+          - "modules/gradle/base/bom/data/build/staging-deploy"
+          - "modules/gradle/base/bom/finance/build/staging-deploy"
+          - "modules/gradle/base/bom/format/build/staging-deploy"
+          - "modules/gradle/base/bom/geo/build/staging-deploy"
+          - "modules/gradle/base/bom/google/build/staging-deploy"
+          - "modules/gradle/base/bom/graphic/build/staging-deploy"
+          - "modules/gradle/base/bom/i18n/build/staging-deploy"
+          - "modules/gradle/base/bom/jakarta/build/staging-deploy"
+          - "modules/gradle/base/bom/json/build/staging-deploy"
+          - "modules/gradle/base/bom/kubernetes/build/staging-deploy"
+          - "modules/gradle/base/bom/lang/build/staging-deploy"
+          - "modules/gradle/base/bom/lock/build/staging-deploy"
+          - "modules/gradle/base/bom/logging/build/staging-deploy"
+          - "modules/gradle/base/bom/manifold/build/staging-deploy"
+          - "modules/gradle/base/bom/mapping/build/staging-deploy"
+          - "modules/gradle/base/bom/math/build/staging-deploy"
+          - "modules/gradle/base/bom/measure/build/staging-deploy"
+          - "modules/gradle/base/bom/net/build/staging-deploy"
+          - "modules/gradle/base/bom/observability/build/staging-deploy"
+          - "modules/gradle/base/bom/performance/build/staging-deploy"
+          - "modules/gradle/base/bom/reporting/build/staging-deploy"
+          - "modules/gradle/base/bom/sdk/build/staging-deploy"
+          - "modules/gradle/base/bom/spring/build/staging-deploy"
+          - "modules/gradle/base/bom/template/build/staging-deploy"
+          - "modules/gradle/base/bom/test/build/staging-deploy"
+          - "modules/gradle/base/bom/util/build/staging-deploy"
+          - "modules/gradle/base/bom/vaadin/build/staging-deploy"
+          - "modules/gradle/base/bom/validation/build/staging-deploy"
+          - "modules/gradle/base/bom/web/build/staging-deploy"
+          - "modules/gradle/base/bom/workflow/build/staging-deploy"
+          - "modules/gradle/base/bom/xml/build/staging-deploy"
+          - "modules/gradle/base/bom/all/build/staging-deploy"
+
+#    mavenCentral:
+#      app:
+#        active: ALWAYS
+#        url: https://central.sonatype.com/api/v1/publisher
+#        stagingRepository: build/staging-deploy
+
+#    nexus2:
+#      snapshot-deploy:
+#        active: SNAPSHOT
+#        snapshotUrl: "https://central.sonatype.com/repository/maven-snapshots"
+#        applyMavenCentralRules: true
+#        snapshotSupported: true
+#        closeRepository: true
+#        releaseRepository: false
+#        stagingRepository: "build/staging-deploy"

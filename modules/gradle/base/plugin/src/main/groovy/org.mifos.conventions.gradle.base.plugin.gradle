@@ -1,0 +1,76 @@
+plugins {
+    id "org.mifos.conventions.gradle.base.core.java"
+    id "org.mifos.conventions.gradle.base.java.check"
+    id "org.mifos.conventions.gradle.base.dependencies.ai"
+    id "org.mifos.conventions.gradle.base.dependencies.amazon"
+    id "org.mifos.conventions.gradle.base.dependencies.cache"
+    id "org.mifos.conventions.gradle.base.dependencies.camel"
+    id "org.mifos.conventions.gradle.base.dependencies.cep"
+    id "org.mifos.conventions.gradle.base.dependencies.check"
+    id "org.mifos.conventions.gradle.base.dependencies.cli"
+    // id "org.mifos.conventions.gradle.base.dependencies.cloudevents"
+    id "org.mifos.conventions.gradle.base.dependencies.collections"
+    id "org.mifos.conventions.gradle.base.dependencies.commons"
+    id "org.mifos.conventions.gradle.base.dependencies.crypto"
+    id "org.mifos.conventions.gradle.base.dependencies.data"
+    id "org.mifos.conventions.gradle.base.dependencies.finance"
+    id "org.mifos.conventions.gradle.base.dependencies.format"
+    id "org.mifos.conventions.gradle.base.dependencies.geo"
+    id "org.mifos.conventions.gradle.base.dependencies.google"
+    id "org.mifos.conventions.gradle.base.dependencies.graphic"
+    id "org.mifos.conventions.gradle.base.dependencies.i18n"
+    id "org.mifos.conventions.gradle.base.dependencies.jakarta"
+    id "org.mifos.conventions.gradle.base.dependencies.json"
+    id "org.mifos.conventions.gradle.base.dependencies.keycloak"
+    id "org.mifos.conventions.gradle.base.dependencies.kubernetes"
+    id "org.mifos.conventions.gradle.base.dependencies.lang"
+    id "org.mifos.conventions.gradle.base.dependencies.lock"
+    id "org.mifos.conventions.gradle.base.dependencies.logging"
+    id "org.mifos.conventions.gradle.base.dependencies.manifold"
+    id "org.mifos.conventions.gradle.base.dependencies.mapping"
+    id "org.mifos.conventions.gradle.base.dependencies.math"
+    id "org.mifos.conventions.gradle.base.dependencies.measure"
+    id "org.mifos.conventions.gradle.base.dependencies.net"
+    id "org.mifos.conventions.gradle.base.dependencies.observability"
+    id "org.mifos.conventions.gradle.base.dependencies.reporting"
+    id "org.mifos.conventions.gradle.base.dependencies.sdk"
+    id "org.mifos.conventions.gradle.base.dependencies.spring"
+    id "org.mifos.conventions.gradle.base.dependencies.template"
+    id "org.mifos.conventions.gradle.base.dependencies.test"
+    id "org.mifos.conventions.gradle.base.dependencies.util"
+    id "org.mifos.conventions.gradle.base.dependencies.vaadin"
+    id "org.mifos.conventions.gradle.base.dependencies.validation"
+    id "org.mifos.conventions.gradle.base.dependencies.web"
+    id "org.mifos.conventions.gradle.base.dependencies.workflow"
+    id "org.mifos.conventions.gradle.base.dependencies.xml"
+    id "groovy-gradle-plugin"
+    id "java-gradle-plugin"
+    id "com.github.shalousun.smart-doc"
+    // id "dev.sigstore.sign"
+}
+
+// NOTE: necessary because of very outdated Groovy dependency on asciidoc plugin
+configurations.all {
+    exclude group: "org.codehaus.groovy", module: "groovy"
+    exclude group: "org.codehaus.groovy", module: "groovy-nio"
+    exclude group: "org.slf4j", module: "slf4j-simple"
+}
+
+dependencies {
+    api "org.mifos.conventions.gradle:mifos-conventions-gradle-base-java:0.1.0-SNAPSHOT"
+    implementation "commons-io:commons-io"
+    implementation "org.apache.commons:commons-lang3"
+    implementation "org.apache.commons:commons-text"
+    implementation "tools.jackson.dataformat:jackson-dataformat-yaml"
+    compileOnly "org.projectlombok:lombok"
+    annotationProcessor "org.projectlombok:lombok"
+
+    testImplementation gradleTestKit()
+    testImplementation "org.junit.jupiter:junit-jupiter"
+    testRuntimeOnly "org.junit.platform:junit-platform-launcher"
+    testImplementation "org.assertj:assertj-core"
+}
+
+tasks.named("test", Test) {
+    useJUnitPlatform()
+}

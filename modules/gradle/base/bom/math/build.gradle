@@ -1,0 +1,68 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Math"
+
+dependencies {
+    api platform("org.matheclipse:matheclipse:3.2.0")
+    api(platform("org.hipparchus:hipparchus:4.0.3")) {
+        exclude group: "junit", module: "junit"
+    }
+    api platform("org.dflib:dflib-bom:2.0.0-M6")
+
+    api "tech.tablesaw:tablesaw-core:0.44.4"
+    api "tech.tablesaw:tablesaw-json:0.44.4"
+    api "tech.tablesaw:tablesaw-html:0.44.4"
+    api "tech.tablesaw:tablesaw-saw:0.44.4"
+    api "tech.tablesaw:tablesaw-beakerx:0.44.4"
+    api "tech.tablesaw:tablesaw-excel:0.44.4"
+    api "tech.tablesaw:tablesaw-aggregate:0.44.4"
+    api "tech.tablesaw:tablesaw-jsplot:0.44.4"
+    // api "tech.tablesaw:tablesaw-smile:0.32.1"
+
+    api "com.github.haifengl:smile-kotlin:6.3.0"
+    api "com.github.haifengl:smile-json_3:6.3.0"
+    api "com.github.haifengl:smile-scala_3:6.3.0"
+    api "com.github.haifengl:smile-scala_2.13:6.3.0"
+    api "com.github.haifengl:smile-nlp:6.3.0"
+    api "com.github.haifengl:smile-core:6.3.0"
+    api "com.github.haifengl:smile-base:6.3.0"
+    api "com.github.haifengl:smile-deep:6.3.0"
+    api "com.github.haifengl:smile-plot:6.3.0"
+    api "com.github.haifengl:smile-json_2.13:6.3.0"
+    api "com.github.haifengl:smile-spark_2.13:6.3.0"
+    api "com.github.haifengl:smile-mkl:3.0.3"
+    api "com.github.haifengl:smile-data:2.6.0"
+    api "com.github.haifengl:smile-io:2.6.0"
+    api "com.github.haifengl:smile-math:2.6.0"
+    api "com.github.haifengl:smile-graph:2.6.0"
+    api "com.github.haifengl:smile-interpolation:2.6.0"
+    api "com.github.haifengl:smile-netlib:2.4.0"
+    api "com.github.haifengl:smile-vega_2.13:2.3.0"
+    api "com.github.haifengl:smile-cas_2.13:2.3.0"
+    api "com.github.haifengl:smile-nd4j:1.5.3"
+
+    api "org.apache.commons:commons-math4-legacy:4.0-beta1"
+    api "org.apache.commons:commons-math4-legacy-core:4.0-beta1"
+    api "org.apache.commons:commons-math4-legacy-exception:4.0-beta1"
+    api "org.apache.commons:commons-math4-transform:4.0-beta1"
+    api "org.apache.commons:commons-math4-neuralnet:4.0-beta1"
+    api "org.apache.commons:commons-math4-core:4.0-beta1"
+
+    // https://www.infoq.com/presentations/data-frames-java/
+    api "io.github.vmzakharov:dataframe-ec:1.4.0"
+
+    api "org.decimal4j:decimal4j:1.0.3"
+
+    api "org.ojalgo:ojalgo:57.1.1"
+
+    api "org.apfloat:apfloat:1.16.0"
+
+    api "org.ejml:ejml-core:0.46.1"
+    api "org.ejml:ejml-all:0.46.1"
+
+    api "it.unibo.alchemist:alchemist-full-jvm:36.0.12"
+
+    api "org.logicng:logicng:2.6.2"
+}

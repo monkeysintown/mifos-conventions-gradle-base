@@ -1,0 +1,33 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Check"
+
+dependencies {
+    api platform("com.uber.nullaway:nullaway-bom:0.14.0")
+
+    api "com.google.code.findbugs:jsr305:3.0.2"
+
+    api "org.jspecify:jspecify:1.0.1"
+
+    api "com.google.errorprone:error_prone_core:2.50.0"
+    api "com.google.errorprone:error_prone_annotations:2.50.0"
+    api "com.google.errorprone:error_prone_type_annotations:2.50.0"
+    api "com.google.errorprone:error_prone_refaster:2.50.0"
+    api "com.google.errorprone:error_prone_docgen:2.50.0"
+    api "com.google.errorprone:error_prone_docgen_processor:2.50.0"
+
+    api "org.checkerframework:javacutil:4.2.2"
+    api "org.checkerframework:framework-test:4.2.2"
+    api "org.checkerframework:dataflow-nullaway:4.2.2"
+    api "org.checkerframework:dataflow-errorprone:4.2.2"
+    api "org.checkerframework:dataflow:4.2.2"
+    api "org.checkerframework:dataflow-shaded:4.2.2"
+    api "org.checkerframework:checker-util:4.2.2"
+    api "org.checkerframework:checker-qual-android:4.2.2"
+    api "org.checkerframework:checker-qual:4.2.2"
+    api "org.checkerframework:checker:4.2.2"
+    api "org.checkerframework:stubparser:3.28.1"
+    api "org.checkerframework:checker-compat-qual:2.5.6"
+}

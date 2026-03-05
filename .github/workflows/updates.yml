@@ -1,0 +1,165 @@
+name: Updates
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK
+        uses: actions/setup-java@v5
+        with:
+          java-version: "25"
+          distribution: "zulu"
+          cache: gradle
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v6
+
+      - name: Prepare folders
+        run: mkdir -p build/updates
+
+      - name: Find updates for ai
+        run: "./gradlew :mifos-conventions-gradle-base-bom-ai:dependencyUpdates --no-parallel --info > build/updates/ai.txt"
+
+      - name: Find updates for amazon
+        run: "./gradlew :mifos-conventions-gradle-base-bom-amazon:dependencyUpdates --no-parallel --info > build/updates/amazon.txt"
+
+      - name: Find updates for net
+        run: "./gradlew :mifos-conventions-gradle-base-bom-net:dependencyUpdates --no-parallel --info > build/updates/net.txt"
+
+      - name: Find updates for geo
+        run: "./gradlew :mifos-conventions-gradle-base-bom-geo:dependencyUpdates --no-parallel --info > build/updates/geo.txt"
+
+      - name: Find updates for xml
+        run: "./gradlew :mifos-conventions-gradle-base-bom-xml:dependencyUpdates --no-parallel --info > build/updates/xml.txt"
+
+      - name: Find updates for workflow
+        run: "./gradlew :mifos-conventions-gradle-base-bom-workflow:dependencyUpdates --no-parallel --info > build/updates/workflow.txt"
+
+      - name: Find updates for data
+        run: "./gradlew :mifos-conventions-gradle-base-bom-data:dependencyUpdates --no-parallel --info > build/updates/data.txt"
+
+      - name: Find updates for cli
+        run: "./gradlew :mifos-conventions-gradle-base-bom-cli:dependencyUpdates --no-parallel --info > build/updates/cli.txt"
+
+      - name: Find updates for auth
+        run: "./gradlew :mifos-conventions-gradle-base-bom-auth:dependencyUpdates --no-parallel --info > build/updates/auth.txt"
+
+      - name: Find updates for lock
+        run: "./gradlew :mifos-conventions-gradle-base-bom-lock:dependencyUpdates --no-parallel --info > build/updates/lock.txt"
+
+      - name: Find updates for commons
+        run: "./gradlew :mifos-conventions-gradle-base-bom-commons:dependencyUpdates --no-parallel --info > build/updates/commons.txt"
+
+      - name: Find updates for cloudevents
+        run: "./gradlew :mifos-conventions-gradle-base-bom-cloudevents:dependencyUpdates --no-parallel --info > build/updates/cloudevents.txt"
+
+      - name: Find updates for performance
+        run: "./gradlew :mifos-conventions-gradle-base-bom-performance:dependencyUpdates --no-parallel --info > build/updates/performance.txt"
+
+      - name: Find updates for observability
+        run: "./gradlew :mifos-conventions-gradle-base-bom-observability:dependencyUpdates --no-parallel --info > build/updates/observability.txt"
+
+      - name: Find updates for sdk
+        run: "./gradlew :mifos-conventions-gradle-base-bom-sdk:dependencyUpdates --no-parallel --info > build/updates/sdk.txt"
+
+      - name: Find updates for logging
+        run: "./gradlew :mifos-conventions-gradle-base-bom-logging:dependencyUpdates --no-parallel --info > build/updates/logging.txt"
+
+      - name: Find updates for jakarta
+        run: "./gradlew :mifos-conventions-gradle-base-bom-jakarta:dependencyUpdates --no-parallel --info > build/updates/jakarta.txt"
+
+      - name: Find updates for cryptography
+        run: "./gradlew :mifos-conventions-gradle-base-bom-cryptography:dependencyUpdates --no-parallel --info > build/updates/cryptography.txt"
+
+      - name: Find updates for automation
+        run: "./gradlew :mifos-conventions-gradle-base-bom-automation:dependencyUpdates --no-parallel --info > build/updates/automation.txt"
+
+      - name: Find updates for check
+        run: "./gradlew :mifos-conventions-gradle-base-bom-check:dependencyUpdates --no-parallel --info > build/updates/check.txt"
+
+      - name: Find updates for kubernetes
+        run: "./gradlew :mifos-conventions-gradle-base-bom-kubernetes:dependencyUpdates --no-parallel --info > build/updates/kubernetes.txt"
+
+      - name: Find updates for measure
+        run: "./gradlew :mifos-conventions-gradle-base-bom-measure:dependencyUpdates --no-parallel --info > build/updates/measure.txt"
+
+      - name: Find updates for format
+        run: "./gradlew :mifos-conventions-gradle-base-bom-format:dependencyUpdates --no-parallel --info > build/updates/format.txt"
+
+      - name: Find updates for collections
+        run: "./gradlew :mifos-conventions-gradle-base-bom-collections:dependencyUpdates --no-parallel --info > build/updates/collections.txt"
+
+      - name: Find updates for template
+        run: "./gradlew :mifos-conventions-gradle-base-bom-template:dependencyUpdates --no-parallel --info > build/updates/template.txt"
+
+      - name: Find updates for google
+        run: "./gradlew :mifos-conventions-gradle-base-bom-google:dependencyUpdates --no-parallel --info > build/updates/google.txt"
+
+      - name: Find updates for cache
+        run: "./gradlew :mifos-conventions-gradle-base-bom-cache:dependencyUpdates --no-parallel --info > build/updates/cache.txt"
+
+      - name: Find updates for util
+        run: "./gradlew :mifos-conventions-gradle-base-bom-util:dependencyUpdates --no-parallel --info > build/updates/util.txt"
+
+      - name: Find updates for math
+        run: "./gradlew :mifos-conventions-gradle-base-bom-math:dependencyUpdates --no-parallel --info > build/updates/math.txt"
+
+      - name: Find updates for manifold
+        run: "./gradlew :mifos-conventions-gradle-base-bom-manifold:dependencyUpdates --no-parallel --info > build/updates/manifold.txt"
+
+      - name: Find updates for web
+        run: "./gradlew :mifos-conventions-gradle-base-bom-web:dependencyUpdates --no-parallel --info > build/updates/web.txt"
+
+      - name: Find updates for test
+        run: "./gradlew :mifos-conventions-gradle-base-bom-test:dependencyUpdates --no-parallel --info > build/updates/test.txt"
+
+      - name: Find updates for finance
+        run: "./gradlew :mifos-conventions-gradle-base-bom-finance:dependencyUpdates --no-parallel --info > build/updates/finance.txt"
+
+      - name: Find updates for camel
+        run: "./gradlew :mifos-conventions-gradle-base-bom-camel:dependencyUpdates --no-parallel --info > build/updates/camel.txt"
+
+      - name: Find updates for validation
+        run: "./gradlew :mifos-conventions-gradle-base-bom-validation:dependencyUpdates --no-parallel --info > build/updates/validation.txt"
+
+      - name: Find updates for mapping
+        run: "./gradlew :mifos-conventions-gradle-base-bom-mapping:dependencyUpdates --no-parallel --info > build/updates/mapping.txt"
+
+      - name: Find updates for i18n
+        run: "./gradlew :mifos-conventions-gradle-base-bom-i18n:dependencyUpdates --no-parallel --info > build/updates/i18n.txt"
+
+      - name: Find updates for vaadin
+        run: "./gradlew :mifos-conventions-gradle-base-bom-vaadin:dependencyUpdates --no-parallel --info > build/updates/vaadin.txt"
+
+      - name: Find updates for cep
+        run: "./gradlew :mifos-conventions-gradle-base-bom-cep:dependencyUpdates --no-parallel --info > build/updates/cep.txt"
+
+      - name: Find updates for graphic
+        run: "./gradlew :mifos-conventions-gradle-base-bom-graphic:dependencyUpdates --no-parallel --info > build/updates/graphic.txt"
+
+      - name: Find updates for json
+        run: "./gradlew :mifos-conventions-gradle-base-bom-json:dependencyUpdates --no-parallel --info > build/updates/json.txt"
+
+      - name: Find updates for reporting
+        run: "./gradlew :mifos-conventions-gradle-base-bom-reporting:dependencyUpdates --no-parallel --info > build/updates/reporting.txt"
+
+      - name: Find updates for spring
+        run: "./gradlew :mifos-conventions-gradle-base-bom-spring:dependencyUpdates --no-parallel --info > build/updates/spring.txt"
+
+      - name: Find updates for plugins
+        run: "./gradlew :mifos-conventions-gradle-base-dependencies:dependencyUpdates --no-parallel --info > build/updates/plugins.txt"
+
+      - name: Save output folder as artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: dependency-updates
+          path: build/updates/

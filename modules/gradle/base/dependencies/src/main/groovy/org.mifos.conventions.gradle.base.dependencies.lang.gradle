@@ -1,0 +1,14 @@
+dependencies {
+    constraints {
+        implementation "com.github.javaparser:javaparser-symbol-solver-testing:3.28.2"
+        implementation "com.github.javaparser:javaparser-code-generators:3.28.2"
+        implementation "com.github.javaparser:javaparser-core-testing:3.28.2"
+        implementation "com.github.javaparser:javaparser-core-testing-bdd:3.28.2"
+        implementation "com.github.javaparser:javaparser-core-metamodel-generator:3.28.2"
+        implementation "com.github.javaparser:javaparser-parent:3.28.2"
+        implementation "com.github.javaparser:javaparser-core:3.28.2"
+        implementation "com.github.javaparser:javaparser-symbol-solver-core:3.28.2"
+        implementation "com.github.javaparser:javaparser-core-serialization:3.28.2"
+        implementation "com.github.javaparser:javaparser-symbol-solver-model:3.28.2"
+    }
+}

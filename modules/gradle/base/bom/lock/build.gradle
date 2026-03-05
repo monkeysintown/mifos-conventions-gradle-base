@@ -1,0 +1,11 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Lock"
+
+dependencies {
+    api platform("net.javacrumbs.shedlock:shedlock-bom:7.9.0") {
+        exclude group: "org.springframework"
+    }
+}

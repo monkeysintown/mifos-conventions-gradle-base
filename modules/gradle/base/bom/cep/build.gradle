@@ -1,0 +1,13 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Complex Event Processing"
+
+dependencies {
+    api "io.siddhi:siddhi-core:5.1.33"
+    api "io.siddhi:siddhi-query-api:5.1.33"
+    api "io.siddhi:siddhi-query-compiler:5.1.33"
+    api "io.siddhi:siddhi-annotations:5.1.33"
+    api "io.siddhi:siddhi-service:5.1.33"
+}

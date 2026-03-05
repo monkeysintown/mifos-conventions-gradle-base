@@ -1,0 +1,3 @@
+dependencies {
+    implementation platform("org.hibernate.validator:hibernate-validator-bom:9.1.3.Final")
+}

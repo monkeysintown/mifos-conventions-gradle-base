@@ -1,0 +1,11 @@
+dependencies {
+    implementation platform("org.apache.tika:tika-bom:4.0.0")
+
+    constraints {
+        implementation "com.opencsv:opencsv:5.12.0"
+
+        implementation "org.apache.thrift:libthrift:0.24.0"
+
+        implementation "com.vladsch.flexmark:flexmark-all:0.64.8"
+    }
+}

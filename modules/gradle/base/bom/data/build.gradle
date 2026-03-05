@@ -1,0 +1,131 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Data"
+
+repositories {
+    maven {
+        url = "https://s3.amazonaws.com/redshift-maven-repository/release/"
+    }
+
+    dependencies {
+        // api platform("com.querydsl:querydsl-bom:5.1.0")
+        api platform("io.github.openfeign.querydsl:querydsl-bom:7.6")
+        api platform("com.infobip:infobip-spring-data-bom:10.0.7")
+        api platform("org.hibernate.orm:hibernate-platform:7.4.5.Final")
+        // api platform("org.hibernate.search:hibernate-search-bom:8.4.0")
+        // api platform("org.hibernate.ogm:hibernate-ogm-bom:5.4.2")
+
+        api "org.hibernate.reactive:hibernate-reactive-core:4.5.4.Final"
+
+        api "software.amazon.jdbc:aws-advanced-jdbc-wrapper:4.4.0"
+
+        api "com.h2database:h2:2.4.240"
+
+        api "io.r2dbc:r2dbc-h2:1.1.0.RELEASE"
+
+        api "org.postgresql:postgresql:42.7.13"
+        api "org.postgresql:r2dbc-postgresql:1.1.2.RELEASE"
+        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-postgres:1.29.0"
+
+        api "mysql:mysql-connector-java:8.0.33"
+        api "io.asyncer:r2dbc-mysql:1.4.3"
+
+        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-mysql:1.29.0"
+
+        api "org.mariadb.jdbc:mariadb-java-client:3.5.10"
+        api "org.mariadb:r2dbc-mariadb:1.4.1"
+        api "com.google.cloud:cloud-sql-connector-r2dbc-mariadb:1.29.0"
+
+        api "com.amazon.redshift:redshift-jdbc42:2.2.8"
+
+        api "net.postgis:postgis-jdbc:2025.1.1"
+        api "net.postgis:postgis-jdbc-jts:2025.1.1"
+        api "net.postgis:postgis-jdbc-java2d:2025.1.1"
+
+        api "com.microsoft.sqlserver:mssql-jdbc:13.4.0.jre11"
+
+        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-sqlserver:1.29.0"
+
+        api "io.codenotary:immudb4j:1.0.1"
+
+        api "org.liquibase:liquibase-core:5.0.4"
+        api "org.liquibase.ext:liquibase-postgresql:5.0.4"
+        api "org.liquibase.ext:liquibase-mysql:5.0.4"
+
+        api "org.jooq:jooq:3.21.7"
+        api "org.jooq:jooq-checker:3.21.7"
+        api "org.jooq:jooq-migrations:3.21.7"
+        api "org.jooq:jooq-console:3.1.0"
+        api "org.jooq:jooq-postgres-extensions:3.21.7"
+
+        constraints {
+            modules {
+                module("com.querydsl:querydsl-core") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-core", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-apt") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-apt", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-spatial") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-spatial", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-codegen") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-codegen", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-codegen-utils") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-codegen-utils", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-sql") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-sql", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-sql-codegen") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-sql-codegen", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-sql-spring") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-sql-spring", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-sql-spatial") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-sql-spatial", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-sql-json") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-sql-json", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-jdo") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-jdo", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-r2dbc") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-r2dbc", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-mongodb") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-mongodb", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-jpa") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-jpa", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-jpa-codegen") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-jpa-codegen", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-scala") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-scala", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-kotlin") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-kotlin", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-kotlin-codegen") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-kotlin-codegen", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-ksp-codegen") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-ksp-codegen", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-guava") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-guava", "Use OpenFeign QueryDSL!")
+                }
+                module("com.querydsl:querydsl-collections") {
+                    replacedBy("io.github.openfeign.querydsl:querydsl-collections", "Use OpenFeign QueryDSL!")
+                }
+            }
+        }
+    }
+}

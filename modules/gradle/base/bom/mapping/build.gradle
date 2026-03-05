@@ -1,0 +1,13 @@
+plugins {
+    id "org.mifos.conventions.gradle.internal.bom"
+}
+
+description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Mapping"
+
+dependencies {
+    api "org.mapstruct:mapstruct:1.7.0.Beta2"
+    api "org.mapstruct:mapstruct-processor:1.7.0.Beta2"
+    api "org.mapstruct.extensions.spring:mapstruct-spring-extensions:2.0.0"
+    api "org.mapstruct.extensions.spring:mapstruct-spring-test-extensions:2.0.0"
+    api "org.mapstruct.extensions.spring:mapstruct-spring-annotations:2.0.0"
+}
