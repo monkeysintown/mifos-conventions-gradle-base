@@ -1,0 +1,55 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        mavenCentral().content {
+            excludeModule("javax.media", "jai_core")
+        }
+        gradlePluginPortal()
+        maven {
+            url = uri("https://mifos.jfrog.io/artifactory/mifosx-gradle-local")
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral().content {
+            excludeModule("javax.media", "jai_core")
+        }
+        maven {
+            url = uri("https://mifos.jfrog.io/artifactory/mifosx-gradle-local")
+        }
+        gradlePluginPortal()
+    }
+
+    configurations.configureEach {
+        resolutionStrategy {
+            dependencySubstitution {
+                substitute module( "com.burgstaller:okhttp-digest:1.10" ) using module("io.github.rburgst:okhttp-digest:1.21") because "okhttp-digest only version 1.21 is available on Maven Central. Old version was on jcenter, which asciidoctor-gradle-plugin depends on transitively through simplified-jruby-gradle-plugin via http-builder-ng-okhttp "
+            }
+        }
+    }
+    dependencies {
+        classpath "io.freefair.aggregate-javadoc:io.freefair.aggregate-javadoc.gradle.plugin:9.5.0"
+        classpath "com.palantir.java-format-idea:com.palantir.java-format-idea.gradle.plugin:2.91.0"
+        classpath "com.github.ben-manes.versions:com.github.ben-manes.versions.gradle.plugin:0.54.0"
+        classpath "com.autonomousapps.dependency-analysis:com.autonomousapps.dependency-analysis.gradle.plugin:3.10.0"
+        classpath "pl.allegro.tech.build.axion-release:pl.allegro.tech.build.axion-release.gradle.plugin:1.21.2"
+    }
+}
+
+rootProject.name = "mifos-conventions-gradle-base"
+
+include(":mifos-conventions-gradle-base-core")
+project(":mifos-conventions-gradle-base-core").projectDir = file("${rootDir}/modules/gradle/base/core")
+include(":mifos-conventions-gradle-base-doc")
+project(":mifos-conventions-gradle-base-doc").projectDir = file("${rootDir}/modules/gradle/base/doc")
+include(":mifos-conventions-gradle-base-dependencies")
+project(":mifos-conventions-gradle-base-dependencies").projectDir = file("${rootDir}/modules/gradle/base/dependencies")
+include(":mifos-conventions-gradle-base-java")
+project(":mifos-conventions-gradle-base-java").projectDir = file("${rootDir}/modules/gradle/base/java")
+include(":mifos-conventions-gradle-base-plugin")
+project(":mifos-conventions-gradle-base-plugin").projectDir = file("${rootDir}/modules/gradle/base/plugin")
+include(":mifos-conventions-gradle-base-template")
+project(":mifos-conventions-gradle-base-template").projectDir = file("${rootDir}/modules/gradle/base/template")

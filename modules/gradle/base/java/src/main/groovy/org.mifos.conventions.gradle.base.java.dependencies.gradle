@@ -1,0 +1,66 @@
+plugins {
+    id "org.mifos.conventions.gradle.base.dependencies.ai"
+    id "org.mifos.conventions.gradle.base.dependencies.amazon"
+    id "org.mifos.conventions.gradle.base.dependencies.cache"
+    id "org.mifos.conventions.gradle.base.dependencies.camel"
+    id "org.mifos.conventions.gradle.base.dependencies.cep"
+    id "org.mifos.conventions.gradle.base.dependencies.check"
+    id "org.mifos.conventions.gradle.base.dependencies.cli"
+    // id "org.mifos.conventions.gradle.base.dependencies.cloudevents"
+    id "org.mifos.conventions.gradle.base.dependencies.collections"
+    id "org.mifos.conventions.gradle.base.dependencies.comm"
+    id "org.mifos.conventions.gradle.base.dependencies.commons"
+    id "org.mifos.conventions.gradle.base.dependencies.crypto"
+    id "org.mifos.conventions.gradle.base.dependencies.data"
+    id "org.mifos.conventions.gradle.base.dependencies.doc"
+    id "org.mifos.conventions.gradle.base.dependencies.finance"
+    id "org.mifos.conventions.gradle.base.dependencies.format"
+    id "org.mifos.conventions.gradle.base.dependencies.geo"
+    id "org.mifos.conventions.gradle.base.dependencies.google"
+    id "org.mifos.conventions.gradle.base.dependencies.graphic"
+    id "org.mifos.conventions.gradle.base.dependencies.i18n"
+    id "org.mifos.conventions.gradle.base.dependencies.jakarta"
+    id "org.mifos.conventions.gradle.base.dependencies.json"
+    id "org.mifos.conventions.gradle.base.dependencies.keycloak"
+    id "org.mifos.conventions.gradle.base.dependencies.kubernetes"
+    id "org.mifos.conventions.gradle.base.dependencies.lock"
+    id "org.mifos.conventions.gradle.base.dependencies.logging"
+    id "org.mifos.conventions.gradle.base.dependencies.manifold"
+    id "org.mifos.conventions.gradle.base.dependencies.mapping"
+    id "org.mifos.conventions.gradle.base.dependencies.math"
+    id "org.mifos.conventions.gradle.base.dependencies.measure"
+    id "org.mifos.conventions.gradle.base.dependencies.net"
+    id "org.mifos.conventions.gradle.base.dependencies.observability"
+    id "org.mifos.conventions.gradle.base.dependencies.reporting"
+    id "org.mifos.conventions.gradle.base.dependencies.springboot"
+    id "org.mifos.conventions.gradle.base.dependencies.template"
+    id "org.mifos.conventions.gradle.base.dependencies.test"
+    id "org.mifos.conventions.gradle.base.dependencies.util"
+    id "org.mifos.conventions.gradle.base.dependencies.vaadin"
+    id "org.mifos.conventions.gradle.base.dependencies.validation"
+    id "org.mifos.conventions.gradle.base.dependencies.web"
+    id "org.mifos.conventions.gradle.base.dependencies.workflow"
+    id "org.mifos.conventions.gradle.base.dependencies.xml"
+}
+
+dependencies {
+    constraints {
+        modules {
+            module("junit:junit") {
+                replacedBy("org.junit.vintage:junit-vintage-engine", "Use JUnit 5!")
+            }
+            module("com.google.guava:listenablefuture") {
+                replacedBy("com.google.guava:guava", "listenablefuture is part of guava")
+            }
+            module("com.google.collections:google-collections") {
+                replacedBy("com.google.guava:guava", "google-collections is part of guava")
+            }
+            module("org.springframework.boot:spring-boot-starter-tomcat") {
+                replacedBy("org.springframework.boot:spring-boot-starter-jetty", "Use Jetty instead of Tomcat")
+            }
+            // module("org.springframework.boot:spring-boot-starter-logging") {
+            //     replacedBy("org.springframework.boot:spring-boot-starter-log4j2", "Use Log4j2 instead of Logback")
+            // }
+        }
+    }
+}
