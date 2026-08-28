@@ -1,5 +1,5 @@
 dependencies {
-    implementation platform("com.uber.nullaway:nullaway-bom:0.14.0")
+    implementation platform("com.uber.nullaway:nullaway-bom:0.14.1")
 
     constraints {
         implementation "com.google.code.findbugs:jsr305:3.0.2"

@@ -7,6 +7,6 @@ description = "Mifos Initiative - Conventions - Gradle - Base - BOM - I18N"
 dependencies {
     api "com.ibm.icu:icu4j:78.3"
 
-    api "com.googlecode.libphonenumber:libphonenumber:9.0.37"
-    api "com.googlecode.libphonenumber:prefixmapper:3.37"
+    api "com.googlecode.libphonenumber:libphonenumber:9.0.38"
+    api "com.googlecode.libphonenumber:prefixmapper:3.38"
 }

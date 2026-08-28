@@ -14,9 +14,9 @@ dependencies {
 
     api platform("org.ow2.asm:asm-bom:9.10.1")
 
-    api "io.github.classgraph:classgraph:4.8.193"
+    api "io.github.classgraph:classgraph:4.8.194"
 
-    api "org.javassist:javassist:3.32.0-GA"
+    api "org.javassist:javassist:3.33.0-GA"
 
     api "net.bytebuddy:byte-buddy:1.18.12"
 

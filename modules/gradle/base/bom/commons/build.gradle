@@ -5,6 +5,7 @@ plugins {
 description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Commons"
 
 dependencies {
+    api platform("org.apache.commons:commons-vfs2-bom:2.10.0")
     api "commons-beanutils:commons-beanutils:1.11.0"
     api "commons-io:commons-io:2.22.0"
     api "commons-codec:commons-codec:1.22.1"

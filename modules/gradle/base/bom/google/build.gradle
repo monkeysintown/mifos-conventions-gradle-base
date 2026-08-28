@@ -8,9 +8,9 @@ dependencies {
     api platform("com.google.api-client:google-api-client-bom:2.9.0")
     api platform("com.google.http-client:google-http-client-bom:2.2.0")
     api platform("com.google.oauth-client:google-oauth-client-bom:1.39.0")
-    api platform("com.google.auth:google-auth-library-bom:1.50.0")
-    api platform("com.google.maps:google-maps-fleetengine-delivery-bom:0.42.0")
-    api platform("com.google.maps:google-maps-addressvalidation-bom:0.89.0")
+    api platform("com.google.auth:google-auth-library-bom:1.51.0")
+    api platform("com.google.maps:google-maps-fleetengine-delivery-bom:0.43.0")
+    api platform("com.google.maps:google-maps-addressvalidation-bom:0.90.0")
 
     api "com.google.maps:google-maps-services:2.2.0"
     api "com.google.apis:google-api-services-calendar:v3-rev20260708-2.0.0"

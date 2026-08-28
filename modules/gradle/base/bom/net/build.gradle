@@ -12,9 +12,9 @@ dependencies {
     api platform("io.grpc:grpc-bom:1.83.1")
     api platform("com.google.protobuf:protobuf-bom:4.36.0")
 
-    api "io.netty:netty-tcnative:2.0.81.Final"
-    api "io.netty:netty-tcnative-classes:2.0.81.Final"
-    api "io.netty:netty-tcnative-boringssl-static:2.0.81.Final"
+    api "io.netty:netty-tcnative:2.0.83.Final"
+    api "io.netty:netty-tcnative-classes:2.0.83.Final"
+    api "io.netty:netty-tcnative-boringssl-static:2.0.83.Final"
 
     api "com.salesforce.servicelibs:reactive-grpc-common:1.2.4"
     api "com.salesforce.servicelibs:reactor-grpc:1.2.4"

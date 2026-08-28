@@ -61,7 +61,6 @@ dependencies {
     implementation "commons-io:commons-io"
     implementation "org.apache.commons:commons-lang3"
     implementation "org.apache.commons:commons-text"
-    implementation "tools.jackson.dataformat:jackson-dataformat-yaml"
     compileOnly "org.projectlombok:lombok"
     annotationProcessor "org.projectlombok:lombok"
 

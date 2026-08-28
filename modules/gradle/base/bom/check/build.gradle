@@ -5,7 +5,7 @@ plugins {
 description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Check"
 
 dependencies {
-    api platform("com.uber.nullaway:nullaway-bom:0.14.0")
+    api platform("com.uber.nullaway:nullaway-bom:0.14.1")
 
     api "com.google.code.findbugs:jsr305:3.0.2"
 

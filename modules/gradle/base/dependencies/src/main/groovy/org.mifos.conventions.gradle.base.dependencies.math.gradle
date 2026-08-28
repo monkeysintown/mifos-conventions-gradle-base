@@ -3,7 +3,7 @@ dependencies {
     implementation(platform("org.hipparchus:hipparchus:4.0.3")) {
         exclude group: "junit", module: "junit"
     }
-    implementation platform("org.dflib:dflib-bom:2.0.0-M6")
+    implementation platform("org.dflib:dflib-bom:2.0.0-M7")
 
     constraints {
         implementation "tech.tablesaw:tablesaw-core:0.44.4"

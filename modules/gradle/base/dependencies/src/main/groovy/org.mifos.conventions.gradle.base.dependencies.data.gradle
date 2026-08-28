@@ -78,7 +78,7 @@ repositories {
                 }
             }
 
-            implementation "org.hibernate.reactive:hibernate-reactive-core:4.5.4.Final"
+            implementation "org.hibernate.reactive:hibernate-reactive-core:4.5.5.Final"
 
             implementation "software.amazon.jdbc:aws-advanced-jdbc-wrapper:4.4.0"
 
@@ -88,16 +88,16 @@ repositories {
 
             implementation "org.postgresql:postgresql:42.7.13"
             implementation "org.postgresql:r2dbc-postgresql:1.1.2.RELEASE"
-            implementation "com.google.cloud.sql:cloud-sql-connector-r2dbc-postgres:1.29.0"
+            implementation "com.google.cloud.sql:cloud-sql-connector-r2dbc-postgres:1.30.0"
 
             implementation "mysql:mysql-connector-java:8.0.33"
             implementation "io.asyncer:r2dbc-mysql:1.4.3"
 
-            implementation "com.google.cloud.sql:cloud-sql-connector-r2dbc-mysql:1.29.0"
+            implementation "com.google.cloud.sql:cloud-sql-connector-r2dbc-mysql:1.30.0"
 
             implementation "org.mariadb.jdbc:mariadb-java-client:3.5.10"
             implementation "org.mariadb:r2dbc-mariadb:1.4.1"
-            implementation "com.google.cloud:cloud-sql-connector-r2dbc-mariadb:1.29.0"
+            implementation "com.google.cloud:cloud-sql-connector-r2dbc-mariadb:1.30.0"
 
             implementation "com.amazon.redshift:redshift-jdbc42:2.2.8"
 
@@ -107,7 +107,7 @@ repositories {
 
             implementation "com.microsoft.sqlserver:mssql-jdbc:13.4.0.jre11"
 
-            implementation "com.google.cloud.sql:cloud-sql-connector-r2dbc-sqlserver:1.29.0"
+            implementation "com.google.cloud.sql:cloud-sql-connector-r2dbc-sqlserver:1.30.0"
 
             implementation "io.codenotary:immudb4j:1.0.1"
 

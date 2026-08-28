@@ -2,9 +2,9 @@ dependencies {
     implementation platform("com.google.api-client:google-api-client-bom:2.9.0")
     implementation platform("com.google.http-client:google-http-client-bom:2.2.0")
     implementation platform("com.google.oauth-client:google-oauth-client-bom:1.39.0")
-    implementation platform("com.google.auth:google-auth-library-bom:1.50.0")
-    implementation platform("com.google.maps:google-maps-fleetengine-delivery-bom:0.42.0")
-    implementation platform("com.google.maps:google-maps-addressvalidation-bom:0.89.0")
+    implementation platform("com.google.auth:google-auth-library-bom:1.51.0")
+    implementation platform("com.google.maps:google-maps-fleetengine-delivery-bom:0.43.0")
+    implementation platform("com.google.maps:google-maps-addressvalidation-bom:0.90.0")
 
     constraints {
         implementation "com.google.maps:google-maps-services:2.2.0"

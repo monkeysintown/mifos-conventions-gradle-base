@@ -13,9 +13,9 @@ dependencies {
 
     api platform("org.citrusframework:citrus-bom:5.0.0")
 
-    api platform("org.instancio:instancio-bom:6.0.0-RC4")
+    api platform("org.instancio:instancio-bom:6.0.0")
 
-    api platform("com.icegreen:greenmail-parent:2.1.12")
+    api platform("com.icegreen:greenmail-parent:2.1.13")
 
     api "digital.pragmatech.testing:spring-test-profiler:0.3.0"
 
@@ -66,13 +66,6 @@ dependencies {
     api "com.github.database-rider:rider-cucumber:1.44.0"
     api "com.github.database-rider:rider-cdi:1.44.0"
     api "com.github.database-rider:rider-core:1.44.0"
-
-    api "com.icegreen:greenmail:2.1.12"
-    api "com.icegreen:greenmail-webapp:2.1.12"
-    api "com.icegreen:greenmail-standalone:2.1.12"
-    api "com.icegreen:greenmail-docker-standalone:2.1.12"
-    api "com.icegreen:greenmail-spring:2.1.12"
-    api "com.icegreen:greenmail-junit5:2.1.12"
 
     api "net.datafaker:datafaker:2.7.0"
 

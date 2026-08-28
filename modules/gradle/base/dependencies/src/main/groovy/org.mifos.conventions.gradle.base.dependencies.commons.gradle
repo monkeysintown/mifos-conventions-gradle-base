@@ -1,4 +1,6 @@
 dependencies {
+    implementation platform("org.apache.commons:commons-vfs2-bom:2.10.0")
+
     constraints {
         implementation "commons-beanutils:commons-beanutils:1.11.0"
         implementation "commons-io:commons-io:2.22.0"

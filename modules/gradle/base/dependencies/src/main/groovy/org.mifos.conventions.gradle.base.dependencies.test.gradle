@@ -7,9 +7,9 @@ dependencies {
 
     implementation platform("org.citrusframework:citrus-bom:5.0.0")
 
-    implementation platform("org.instancio:instancio-bom:6.0.0-RC4")
+    implementation platform("org.instancio:instancio-bom:6.0.0")
 
-    implementation platform("com.icegreen:greenmail-parent:2.1.12")
+    implementation platform("com.icegreen:greenmail-parent:2.1.13")
 
     constraints {
         implementation "digital.pragmatech.testing:spring-test-profiler:0.3.0"

@@ -17,7 +17,7 @@ repositories {
         // api platform("org.hibernate.search:hibernate-search-bom:8.4.0")
         // api platform("org.hibernate.ogm:hibernate-ogm-bom:5.4.2")
 
-        api "org.hibernate.reactive:hibernate-reactive-core:4.5.4.Final"
+        api "org.hibernate.reactive:hibernate-reactive-core:4.5.5.Final"
 
         api "software.amazon.jdbc:aws-advanced-jdbc-wrapper:4.4.0"
 
@@ -27,16 +27,16 @@ repositories {
 
         api "org.postgresql:postgresql:42.7.13"
         api "org.postgresql:r2dbc-postgresql:1.1.2.RELEASE"
-        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-postgres:1.29.0"
+        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-postgres:1.30.0"
 
         api "mysql:mysql-connector-java:8.0.33"
         api "io.asyncer:r2dbc-mysql:1.4.3"
 
-        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-mysql:1.29.0"
+        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-mysql:1.30.0"
 
         api "org.mariadb.jdbc:mariadb-java-client:3.5.10"
         api "org.mariadb:r2dbc-mariadb:1.4.1"
-        api "com.google.cloud:cloud-sql-connector-r2dbc-mariadb:1.29.0"
+        api "com.google.cloud:cloud-sql-connector-r2dbc-mariadb:1.30.0"
 
         api "com.amazon.redshift:redshift-jdbc42:2.2.8"
 
@@ -46,7 +46,7 @@ repositories {
 
         api "com.microsoft.sqlserver:mssql-jdbc:13.4.0.jre11"
 
-        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-sqlserver:1.29.0"
+        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-sqlserver:1.30.0"
 
         api "io.codenotary:immudb4j:1.0.1"
 

@@ -10,18 +10,18 @@ dependencies {
 
     implementation platform("io.temporal:temporal-bom:1.38.0")
 
-    implementation platform("io.namastack:namastack-outbox-bom:1.8.1")
+    implementation platform("io.namastack:namastack-outbox-bom:1.9.0")
 
     // NOTE: important to select one that is compatible with the latest Camunda Spring Boot starters!
     implementation platform("io.camunda:zeebe-bom:8.9.14")
     implementation platform("io.camunda:camunda-bom:8.9.14")
 
     constraints {
-        implementation "dev.dbos:transact:1.1.0-m8"
-        implementation "dev.dbos:transact-jooq-step-factory:1.1.0-m8"
-        implementation "dev.dbos:transact-spring-txstep-starter:1.1.0-m8"
-        implementation "dev.dbos:transact-spring-boot-starter:1.1.0-m8"
-        implementation "dev.dbos:transact-jdbi-step-factory:1.1.0-m8"
+        implementation "dev.dbos:transact:1.1.0-m10"
+        implementation "dev.dbos:transact-jooq-step-factory:1.1.0-m10"
+        implementation "dev.dbos:transact-spring-txstep-starter:1.1.0-m10"
+        implementation "dev.dbos:transact-spring-boot-starter:1.1.0-m10"
+        implementation "dev.dbos:transact-jdbi-step-factory:1.1.0-m10"
 
         implementation "dev.restate:sdk-api:2.9.4"
         implementation "dev.restate:sdk-spring-boot-starter:2.9.4"

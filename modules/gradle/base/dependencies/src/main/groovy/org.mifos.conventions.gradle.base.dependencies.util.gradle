@@ -9,9 +9,9 @@ dependencies {
     implementation platform("org.ow2.asm:asm-bom:9.10.1")
 
     constraints {
-        implementation "io.github.classgraph:classgraph:4.8.193"
+        implementation "io.github.classgraph:classgraph:4.8.194"
 
-        implementation "org.javassist:javassist:3.32.0-GA"
+        implementation "org.javassist:javassist:3.33.0-GA"
 
         implementation "net.bytebuddy:byte-buddy:1.18.12"
 

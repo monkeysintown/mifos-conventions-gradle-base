@@ -16,17 +16,17 @@ dependencies {
 
     api platform("io.temporal:temporal-bom:1.38.0")
 
-    api platform("io.namastack:namastack-outbox-bom:1.8.1")
+    api platform("io.namastack:namastack-outbox-bom:1.9.0")
 
     // NOTE: important to select one that is compatible with the latest Camunda Spring Boot starters!
     api platform("io.camunda:zeebe-bom:8.9.14")
     api platform("io.camunda:camunda-bom:8.9.14")
 
-    api "dev.dbos:transact:1.1.0-m8"
-    api "dev.dbos:transact-jooq-step-factory:1.1.0-m8"
-    api "dev.dbos:transact-spring-txstep-starter:1.1.0-m8"
-    api "dev.dbos:transact-spring-boot-starter:1.1.0-m8"
-    api "dev.dbos:transact-jdbi-step-factory:1.1.0-m8"
+    api "dev.dbos:transact:1.1.0-m10"
+    api "dev.dbos:transact-jooq-step-factory:1.1.0-m10"
+    api "dev.dbos:transact-spring-txstep-starter:1.1.0-m10"
+    api "dev.dbos:transact-spring-boot-starter:1.1.0-m10"
+    api "dev.dbos:transact-jdbi-step-factory:1.1.0-m10"
 
     api "dev.restate:sdk-api:2.9.4"
     api "dev.restate:sdk-spring-boot-starter:2.9.4"
