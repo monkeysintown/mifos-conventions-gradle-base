@@ -60,6 +60,15 @@ repositories {
         api "org.jooq:jooq-console:3.1.0"
         api "org.jooq:jooq-postgres-extensions:3.21.7"
 
+        api "org.javers:javers-spring-jpa:7.11.8"
+        api "org.javers:javers-spring:7.11.8"
+        api "org.javers:javers-spring-mongo:7.11.8"
+        api "org.javers:javers-persistence-mongo:7.11.8"
+        api "org.javers:javers-spring-boot-starter-mongo:7.11.8"
+        api "org.javers:javers-core:7.11.8"
+        api "org.javers:javers-persistence-sql:7.11.8"
+        api "org.javers:javers-spring-boot-starter-sql:7.11.8"
+
         constraints {
             modules {
                 module("com.querydsl:querydsl-core") {

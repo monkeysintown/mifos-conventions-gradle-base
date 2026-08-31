@@ -101,7 +101,7 @@ dependencies {
         implementation "org.tweetyproject.arg:caf:1.31"
         implementation "org.tweetyproject.arg:eaf:1.31"
         implementation "org.tweetyproject:causal:1.31"
-        implementation "org.tweetyproject.arg:explanations:1.31"()
+        implementation "org.tweetyproject.arg:explanations:1.31"
         implementation "org.tweetyproject:tweety-full:1.31"
         //
 

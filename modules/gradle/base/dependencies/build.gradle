@@ -61,7 +61,7 @@ dependencies {
     implementation "io.freefair.aggregate-javadoc:io.freefair.aggregate-javadoc.gradle.plugin:9.5.0"
     implementation "no.conta.reckon-conventions:no.conta.reckon-conventions.gradle.plugin:2.0.0"
     implementation "io.github.emaarco.bpmn-to-code-gradle:io.github.emaarco.bpmn-to-code-gradle.gradle.plugin:2.4.0"
-    implementation "com.arc-e-tect.gherkin-to-asciidoc:com.arc-e-tect.gherkin-to-asciidoc.gradle.plugin:6.3.0"
+    implementation "com.arc-e-tect.gherkin-to-asciidoc:com.arc-e-tect.gherkin-to-asciidoc.gradle.plugin:6.4.0"
     implementation "se.thinkcode.cucumber-runner:se.thinkcode.cucumber-runner.gradle.plugin:0.0.14"
     implementation "io.swagger.core.v3.swagger-gradle-plugin:io.swagger.core.v3.swagger-gradle-plugin.gradle.plugin:2.2.54"
     implementation "org.spdx.sbom:org.spdx.sbom.gradle.plugin:0.12.0"
@@ -73,5 +73,6 @@ dependencies {
     implementation "com.github.jk1.dependency-license-report:com.github.jk1.dependency-license-report.gradle.plugin:3.1.4"
     implementation "media.barney.crap-java:media.barney.crap-java.gradle.plugin:0.6.3"
     implementation "io.github.usekylis.java-architecture-metrics:io.github.usekylis.java-architecture-metrics.gradle.plugin:0.1.1"
+    implementation "dev.nucleusframework:dev.nucleusframework.gradle.plugin:2.5.7"
     implementation "com.google.guava:guava"
 }
