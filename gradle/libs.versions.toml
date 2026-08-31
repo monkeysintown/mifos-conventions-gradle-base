@@ -4,7 +4,7 @@
 [versions]
 ben-manes-versions = "0.61.0"
 dependencycheck = "13.0.0"
-dependency-analysis = "3.18.0"
+dependency-analysis = "3.19.1"
 axion-release = "1.21.3"
 aggregate-javadoc = "9.5.0"
 java-format-idea = "2.97.0"
