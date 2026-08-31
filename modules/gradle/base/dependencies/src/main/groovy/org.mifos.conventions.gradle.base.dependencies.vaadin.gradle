@@ -7,7 +7,7 @@ repositories {
     }
 
     dependencies {
-        implementation platform("com.vaadin:vaadin-bom:25.2.5")
+        implementation platform("com.vaadin:vaadin-bom:25.2.7")
         constraints {
             developmentOnly "com.vaadin:vaadin-dev:25.2.5"
 

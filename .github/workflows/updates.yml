@@ -155,6 +155,9 @@ jobs:
       - name: Find updates for spring
         run: "./gradlew :mifos-conventions-gradle-base-bom-spring:dependencyUpdates --no-parallel --info > build/updates/spring.txt"
 
+      - name: Find updates for ui
+        run: "./gradlew :mifos-conventions-gradle-base-bom-ui:dependencyUpdates --no-parallel --info > build/updates/ui.txt"
+
       - name: Find updates for plugins
         run: "./gradlew :mifos-conventions-gradle-base-dependencies:dependencyUpdates --no-parallel --info > build/updates/plugins.txt"
 

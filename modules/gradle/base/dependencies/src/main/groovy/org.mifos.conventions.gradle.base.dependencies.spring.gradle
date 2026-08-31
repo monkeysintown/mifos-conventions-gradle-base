@@ -31,7 +31,7 @@ repositories {
 
         implementation platform("org.springframework.restdocs:spring-restdocs-bom:4.0.1")
 
-        implementation platform("org.springdoc:springdoc-openapi-bom:3.1.0")
+        implementation platform("org.springdoc:springdoc-openapi-bom:3.1.1")
 
         implementation platform("io.rsocket:rsocket-bom:1.1.5")
 
@@ -52,20 +52,20 @@ repositories {
             implementation "io.projectreactor.tools:blockhound:1.0.17.RELEASE"
             implementation "io.projectreactor.tools:blockhound-junit-platform:1.0.17.RELEASE"
 
-            implementation "io.github.springwolf:springwolf-ui:2.6.0"
-            implementation "io.github.springwolf:springwolf-kafka:2.6.0"
-            implementation "io.github.springwolf:springwolf-amqp:2.6.0"
-            implementation "io.github.springwolf:springwolf-cloud-stream:2.6.0"
-            implementation "io.github.springwolf:springwolf-sns:2.6.0"
-            implementation "io.github.springwolf:springwolf-sqs:2.6.0"
-            implementation "io.github.springwolf:springwolf-jms:2.6.0"
-            implementation "io.github.springwolf:springwolf-common-model-converters:2.6.0"
-            implementation "io.github.springwolf:springwolf-json-schema:2.6.0"
-            implementation "io.github.springwolf:springwolf-generic-binding:2.6.0"
-            implementation "io.github.springwolf:springwolf-amqp-binding:2.6.0"
-            implementation "io.github.springwolf:springwolf-googlepubsub-binding:2.6.0"
-            implementation "io.github.springwolf:springwolf-core:2.6.0"
-            implementation "io.github.springwolf:springwolf-asyncapi:2.6.0"
+            implementation "io.github.springwolf:springwolf-ui:2.7.0"
+            implementation "io.github.springwolf:springwolf-kafka:2.7.0"
+            implementation "io.github.springwolf:springwolf-amqp:2.7.0"
+            implementation "io.github.springwolf:springwolf-cloud-stream:2.7.0"
+            implementation "io.github.springwolf:springwolf-sns:2.7.0"
+            implementation "io.github.springwolf:springwolf-sqs:2.7.0"
+            implementation "io.github.springwolf:springwolf-jms:2.7.0"
+            implementation "io.github.springwolf:springwolf-common-model-converters:2.7.0"
+            implementation "io.github.springwolf:springwolf-json-schema:2.7.0"
+            implementation "io.github.springwolf:springwolf-generic-binding:2.7.0"
+            implementation "io.github.springwolf:springwolf-amqp-binding:2.7.0"
+            implementation "io.github.springwolf:springwolf-googlepubsub-binding:2.7.0"
+            implementation "io.github.springwolf:springwolf-core:2.7.0"
+            implementation "io.github.springwolf:springwolf-asyncapi:2.7.0"
         }
     }
 }

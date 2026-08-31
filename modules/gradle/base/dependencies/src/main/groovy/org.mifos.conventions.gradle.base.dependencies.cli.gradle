@@ -1,5 +1,5 @@
 dependencies {
-    implementation platform("dev.tamboui:tamboui-bom:0.4.0")
+    implementation platform("dev.tamboui:tamboui-bom:0.5.0-SNAPSHOT")
 
     // implementation platform("org.apache.maven.resolver:maven-resolver:2.0.21")
     implementation platform("org.apache.maven.resolver:maven-resolver:1.9.27")
@@ -7,6 +7,8 @@ dependencies {
     implementation platform("org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-bom:3.3.7")
 
     constraints {
+        annotationProcessor "dev.tamboui:tamboui-processor:0.5.0-SNAPSHOT"
+
         // implementation "org.apache.maven:maven-resolver-provider:4.0.0-rc-6"
         implementation "org.apache.maven:maven-resolver-provider:3.9.16"
         implementation "org.apache.maven:plexus-utils:4.0.0-alpha-5"
@@ -19,33 +21,33 @@ dependencies {
         implementation "info.picocli:picocli-shell-jline3:4.7.7"
         implementation "info.picocli:picocli-groovy:4.7.7"
 
-        implementation "org.jline:jline:4.4.0"
-        implementation "org.jline:jline-terminal-ffm:4.4.0"
-        implementation "org.jline:jline-terminal-jni:4.4.0"
-        implementation "org.jline:jline-terminal-jna:4.4.0"
-        implementation "org.jline:jline-reader:4.4.0"
-        implementation "org.jline:jline-builtins:4.4.0"
-        implementation "org.jline:jline-console:4.4.0"
+        implementation "org.jline:jline:4.4.2"
+        implementation "org.jline:jline-terminal-ffm:4.4.2"
+        implementation "org.jline:jline-terminal-jni:4.4.2"
+        implementation "org.jline:jline-terminal-jna:4.4.2"
+        implementation "org.jline:jline-reader:4.4.2"
+        implementation "org.jline:jline-builtins:4.4.2"
+        implementation "org.jline:jline-console:4.4.2"
         implementation "org.jline:jline-terminal-jansi:3.30.16"
         implementation "org.jline:jline-curses:3.30.16"
-        implementation "org.jline:jline-shell:4.4.0"
-        implementation "org.jline:jline-console-ui:4.4.0"
-        implementation "org.jline:jline-graal:4.4.0"
-        implementation "org.jline:jline-picocli:4.4.0"
-        implementation "org.jline:jline-prompt:4.4.0"
-        implementation "org.jline:jline-native:4.4.0"
-        implementation "org.jline:jline-remote-ssh:4.4.0"
-        implementation "org.jline:jline-remote-telnet:4.4.0"
-        implementation "org.jline:jansi-core:4.4.0"
-        implementation "org.jline:jline-style:4.4.0"
-        implementation "org.jline:jline-terminal:4.4.0"
-        implementation "org.jline:jline-groovy:4.4.0"
+        implementation "org.jline:jline-shell:4.4.2"
+        implementation "org.jline:jline-console-ui:4.4.2"
+        implementation "org.jline:jline-graal:4.4.2"
+        implementation "org.jline:jline-picocli:4.4.2"
+        implementation "org.jline:jline-prompt:4.4.2"
+        implementation "org.jline:jline-native:4.4.2"
+        implementation "org.jline:jline-remote-ssh:4.4.2"
+        implementation "org.jline:jline-remote-telnet:4.4.2"
+        implementation "org.jline:jansi-core:4.4.2"
+        implementation "org.jline:jline-style:4.4.2"
+        implementation "org.jline:jline-terminal:4.4.2"
+        implementation "org.jline:jline-groovy:4.4.2"
 
         implementation "io.github.crramirez:casciian:1.6.0"
         implementation "io.github.crramirez:casciian-terminal-component:1.6.0"
         implementation "io.github.crramirez:casciian-java-desktop:1.6.0"
         implementation "io.github.crramirez:casciian-spring-boot-starter:1.1.0"
 
-        implementation "org.apache.ant:ant:1.10.17"
+        implementation "org.apache.ant:ant:1.10.18"
     }
 }

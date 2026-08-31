@@ -14,11 +14,11 @@ dependencies {
 
     api platform("org.ow2.asm:asm-bom:9.10.1")
 
-    api "io.github.classgraph:classgraph:4.8.194"
+    api "io.github.classgraph:classgraph:4.8.195"
 
     api "org.javassist:javassist:3.33.0-GA"
 
-    api "net.bytebuddy:byte-buddy:1.18.12"
+    api "net.bytebuddy:byte-buddy:1.18.13"
 
     api "org.codehaus.janino:janino:3.1.12"
 
@@ -30,7 +30,7 @@ dependencies {
 
     api "com.fasterxml.uuid:java-uuid-generator:5.2.0"
 
-    api "org.projectlombok:lombok:1.18.46"
+    api "org.projectlombok:lombok:1.18.48"
 
     api "io.soabase.record-builder:record-builder-core:53"
 
@@ -47,6 +47,7 @@ dependencies {
 
     api "io.github.java-diff-utils:java-diff-utils:4.17"
 
-    api "org.eclipse.jgit:org.eclipse.jgit:7.7.1.202607240634-r"
-    api "org.eclipse.jgit:org.eclipse.jgit.ssh.jsch:7.7.1.202607240634-r"
+    api "org.eclipse.jgit:org.eclipse.jgit:7.8.0.202609011348-r"
+    api "org.eclipse.jgit:org.eclipse.jgit.ssh.jsch:7.8.0.202609011348-r"
+    api "org.eclipse.jgit:org.eclipse.jgit.gpg.bc:7.8.0.202609011348-r"
 }

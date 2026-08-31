@@ -17,11 +17,11 @@ dependencies {
     implementation platform("io.camunda:camunda-bom:8.9.14")
 
     constraints {
-        implementation "dev.dbos:transact:1.1.0-m10"
-        implementation "dev.dbos:transact-jooq-step-factory:1.1.0-m10"
-        implementation "dev.dbos:transact-spring-txstep-starter:1.1.0-m10"
-        implementation "dev.dbos:transact-spring-boot-starter:1.1.0-m10"
-        implementation "dev.dbos:transact-jdbi-step-factory:1.1.0-m10"
+        implementation "dev.dbos:transact:1.1.0-m13"
+        implementation "dev.dbos:transact-jooq-step-factory:1.1.0-m13"
+        implementation "dev.dbos:transact-spring-txstep-starter:1.1.0-m13"
+        implementation "dev.dbos:transact-spring-boot-starter:1.1.0-m13"
+        implementation "dev.dbos:transact-jdbi-step-factory:1.1.0-m13"
 
         implementation "dev.restate:sdk-api:2.9.4"
         implementation "dev.restate:sdk-spring-boot-starter:2.9.4"

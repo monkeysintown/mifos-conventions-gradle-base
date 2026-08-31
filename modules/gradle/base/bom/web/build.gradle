@@ -7,15 +7,15 @@ description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Web"
 dependencies {
     api platform("org.apache.tomcat:tomcat:11.0.25")
 
-    api platform("org.eclipse.jetty:jetty-bom:12.1.12")
+    api platform("org.eclipse.jetty:jetty-bom:12.1.13")
 
     api platform("com.squareup.okhttp3:okhttp-bom:5.5.0")
 
     api platform("io.github.openfeign:feign-bom:13.14")
 
-    api platform("org.jboss.resteasy:resteasy-bom:7.0.3.Final")
+    api platform("org.jboss.resteasy:resteasy-bom:7.0.4.Final")
 
-    api platform("io.swagger.core.v3:swagger-bom:2.2.54")
+    api platform("io.swagger.core.v3:swagger-bom:2.2.55")
 
     api "net.devh:grpc-server-spring-boot-starter:3.1.0.RELEASE"
 

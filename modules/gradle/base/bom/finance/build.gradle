@@ -20,13 +20,13 @@ dependencies {
     api "org.javamoney.moneta:moneta-convert:1.4.5"
     api "org.javamoney.moneta:moneta-core:1.4.5"
 
-    api "com.github.xeroapi:xero-java:18.1.0"
+    api "com.github.xeroapi:xero-java:18.2.0"
 
     api "com.stripe:stripe-java:33.3.0"
 
     api "pl.allegro.finance:tradukisto:4.3.3"
 
-    api "org.ta4j:ta4j-core:0.24.1"
+    api "org.ta4j:ta4j-core:0.25.0"
 
     api "com.opengamma.strata:strata-pricer:2.12.74"
     api "com.opengamma.strata:strata-parent:2.12.74"
@@ -52,8 +52,8 @@ dependencies {
     api "net.finmath:representable-contract-state-web:2.5.0"
     api "net.finmath:representable-contract-state:2.5.0"
     api "net.finmath:finmath-decryption-oracle:1.1.6"
-    api "net.finmath:finmath-decryption-oracle-encrypted-hashed-keys:3.0.0"
-    api "net.finmath:finmath-decryption-oracle-encrypted-hashed-execution:3.0.0"
+    api "net.finmath:finmath-decryption-oracle-encrypted-hashed-keys:4.0.1"
+    api "net.finmath:finmath-decryption-oracle-encrypted-hashed-execution:4.0.1"
 
     // legacy
     api "org.knowm.xchange:xchange-bankera:5.1.1"

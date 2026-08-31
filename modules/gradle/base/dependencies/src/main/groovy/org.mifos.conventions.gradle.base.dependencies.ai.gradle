@@ -43,10 +43,10 @@ dependencies {
         implementation "org.apache.opennlp:opennlp-morfologik-addon:2.5.8"
 
         implementation "io.jenetics:jpx:4.0.0"
-        implementation "io.jenetics:jenetics:9.0.0"
-        implementation "io.jenetics:jenetics.ext:9.0.0"
-        implementation "io.jenetics:jenetics.prog:9.0.0"
-        implementation "io.jenetics:jenetics.xml:9.0.0"
+        implementation "io.jenetics:jenetics:9.1.0"
+        implementation "io.jenetics:jenetics.ext:9.1.0"
+        implementation "io.jenetics:jenetics.prog:9.1.0"
+        implementation "io.jenetics:jenetics.xml:9.1.0"
         implementation "io.jenetics:facilejdbc:2.1.1"
         implementation "io.jenetics:lattices:3.0.0.ALPHA4"
         implementation "io.jenetics:colt:2.0.0"
@@ -101,7 +101,7 @@ dependencies {
         implementation "org.tweetyproject.arg:caf:1.31"
         implementation "org.tweetyproject.arg:eaf:1.31"
         implementation "org.tweetyproject:causal:1.31"
-        implementation "org.tweetyproject.arg:explanations:1.31"()
+        implementation "org.tweetyproject.arg:explanations:1.31"
         implementation "org.tweetyproject:tweety-full:1.31"
         //
 

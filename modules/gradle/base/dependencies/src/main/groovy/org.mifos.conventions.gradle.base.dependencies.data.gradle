@@ -82,7 +82,7 @@ repositories {
 
             implementation "software.amazon.jdbc:aws-advanced-jdbc-wrapper:4.4.0"
 
-            implementation "com.h2database:h2:2.4.240"
+            implementation "com.h2database:h2:2.5.250"
 
             implementation "io.r2dbc:r2dbc-h2:1.1.0.RELEASE"
 
@@ -96,7 +96,7 @@ repositories {
             implementation "com.google.cloud.sql:cloud-sql-connector-r2dbc-mysql:1.30.0"
 
             implementation "org.mariadb.jdbc:mariadb-java-client:3.5.10"
-            implementation "org.mariadb:r2dbc-mariadb:1.4.1"
+            implementation "org.mariadb:r2dbc-mariadb:1.4.2"
             implementation "com.google.cloud:cloud-sql-connector-r2dbc-mariadb:1.30.0"
 
             implementation "com.amazon.redshift:redshift-jdbc42:2.2.8"
@@ -115,11 +115,11 @@ repositories {
             implementation "org.liquibase.ext:liquibase-postgresql:5.0.4"
             implementation "org.liquibase.ext:liquibase-mysql:5.0.4"
 
-            implementation "org.jooq:jooq:3.21.7"
-            implementation "org.jooq:jooq-checker:3.21.7"
-            implementation "org.jooq:jooq-migrations:3.21.7"
+            implementation "org.jooq:jooq:3.21.8"
+            implementation "org.jooq:jooq-checker:3.21.8"
+            implementation "org.jooq:jooq-migrations:3.21.8"
             implementation "org.jooq:jooq-console:3.1.0"
-            implementation "org.jooq:jooq-postgres-extensions:3.21.7"
+            implementation "org.jooq:jooq-postgres-extensions:3.21.8"
 
             annotationProcessor "com.infobip:infobip-spring-data-jdbc-annotation-processor-common:10.0.7"
             annotationProcessor "com.infobip:infobip-spring-data-jdbc-annotation-processor:10.0.7"
@@ -139,6 +139,15 @@ repositories {
             implementation "io.github.openfeign.querydsl:querydsl-apt:7.3.0"
             annotationProcessor "io.github.openfeign.querydsl:querydsl-apt:7.3.0"
             testAnnotationProcessor "io.github.openfeign.querydsl:querydsl-apt:7.3.0"
+
+            implementation "org.javers:javers-spring-jpa:7.11.8"
+            implementation "org.javers:javers-spring:7.11.8"
+            implementation "org.javers:javers-spring-mongo:7.11.8"
+            implementation "org.javers:javers-persistence-mongo:7.11.8"
+            implementation "org.javers:javers-spring-boot-starter-mongo:7.11.8"
+            implementation "org.javers:javers-core:7.11.8"
+            implementation "org.javers:javers-persistence-sql:7.11.8"
+            implementation "org.javers:javers-spring-boot-starter-sql:7.11.8"
         }
     }
 }

@@ -26,12 +26,16 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v6
 
+      - name: Resolve Mifos Build Configuration
+        run: ./gradlew mifosConfigUnzip --no-daemon
+
       - name: Build with Gradle
-        run: ./gradlew clean build publish
+        run: ./gradlew clean build publish --no-daemon
 
       - name: Run JReleaser
         uses: jreleaser/jreleaser-action@v2
         env:
+          # JRELEASER_PROJECT_VERSION: ${{ github.ref_name }}
           JRELEASER_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JRELEASER_ARTIFACTORY_TOKEN: ${{ secrets.JRELEASER_ARTIFACTORY_TOKEN }}
           JRELEASER_ARTIFACTORY_USERNAME: ${{ secrets.JRELEASER_ARTIFACTORY_USERNAME }}

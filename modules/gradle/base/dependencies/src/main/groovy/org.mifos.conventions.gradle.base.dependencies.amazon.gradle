@@ -1,5 +1,5 @@
 dependencies {
-    implementation platform("software.amazon.awssdk:bom:2.54.7")
+    implementation platform("software.amazon.awssdk:bom:2.54.13")
 
     constraints {
         implementation "software.amazon.awssdk.crt:aws-crt:0.48.4"

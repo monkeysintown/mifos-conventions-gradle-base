@@ -5,5 +5,5 @@ plugins {
 description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Manifold"
 
 dependencies {
-    api platform("systems.manifold:manifold-deps-parent:2026.1.12")
+    api platform("systems.manifold:manifold-deps-parent:2026.1.13")
 }

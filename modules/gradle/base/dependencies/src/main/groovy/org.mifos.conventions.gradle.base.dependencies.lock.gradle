@@ -1,5 +1,5 @@
 dependencies {
-    implementation platform("net.javacrumbs.shedlock:shedlock-bom:7.9.0") {
+    implementation platform("net.javacrumbs.shedlock:shedlock-bom:7.10.0") {
         exclude group: "org.springframework"
     }
 }

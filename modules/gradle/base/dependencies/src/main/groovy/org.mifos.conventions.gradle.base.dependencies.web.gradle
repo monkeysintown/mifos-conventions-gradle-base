@@ -1,15 +1,15 @@
 dependencies {
     implementation platform("org.apache.tomcat:tomcat:11.0.25")
 
-    implementation platform("org.eclipse.jetty:jetty-bom:12.1.12")
+    implementation platform("org.eclipse.jetty:jetty-bom:12.1.13")
 
     implementation platform("com.squareup.okhttp3:okhttp-bom:5.5.0")
 
     implementation platform("io.github.openfeign:feign-bom:13.14")
 
-    implementation platform("org.jboss.resteasy:resteasy-bom:7.0.3.Final")
+    implementation platform("org.jboss.resteasy:resteasy-bom:7.0.4.Final")
 
-    implementation platform("io.swagger.core.v3:swagger-bom:2.2.54")
+    implementation platform("io.swagger.core.v3:swagger-bom:2.2.55")
 
     constraints {
         implementation "net.devh:grpc-server-spring-boot-starter:3.1.0.RELEASE"

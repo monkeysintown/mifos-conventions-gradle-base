@@ -21,6 +21,12 @@ dependencies {
     api "org.bouncycastle:bcutil-lts8on:2.73.12"
     api "org.bouncycastle:bctls-fips:2.1.24"
 
+    api "org.pgpainless:pgpainless-core:2.0.4"
+    api "org.pgpainless:pgpainless-sop:2.0.4"
+    api "org.pgpainless:pgpainless-cli:2.0.4"
+
+    api "io.github.catallicpankaj:pqc-starter-lib:1.0.0"
+
     api "at.favre.lib:bcrypt:0.10.2"
     api "at.favre.lib:bytes:1.6.1"
 

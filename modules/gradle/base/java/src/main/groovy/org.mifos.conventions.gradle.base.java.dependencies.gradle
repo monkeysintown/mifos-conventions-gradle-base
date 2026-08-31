@@ -35,6 +35,7 @@ plugins {
     id "org.mifos.conventions.gradle.base.dependencies.spring"
     id "org.mifos.conventions.gradle.base.dependencies.template"
     id "org.mifos.conventions.gradle.base.dependencies.test"
+    id "org.mifos.conventions.gradle.base.dependencies.ui"
     id "org.mifos.conventions.gradle.base.dependencies.util"
     id "org.mifos.conventions.gradle.base.dependencies.vaadin"
     id "org.mifos.conventions.gradle.base.dependencies.validation"

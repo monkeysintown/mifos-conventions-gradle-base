@@ -37,7 +37,7 @@ repositories {
 
         api platform("org.springframework.restdocs:spring-restdocs-bom:4.0.1")
 
-        api platform("org.springdoc:springdoc-openapi-bom:3.1.0")
+        api platform("org.springdoc:springdoc-openapi-bom:3.1.1")
 
         api platform("io.rsocket:rsocket-bom:1.1.5")
 
@@ -53,19 +53,19 @@ repositories {
         api "io.projectreactor.tools:blockhound:1.0.17.RELEASE"
         api "io.projectreactor.tools:blockhound-junit-platform:1.0.17.RELEASE"
 
-        api "io.github.springwolf:springwolf-ui:2.6.0"
-        api "io.github.springwolf:springwolf-kafka:2.6.0"
-        api "io.github.springwolf:springwolf-amqp:2.6.0"
-        api "io.github.springwolf:springwolf-cloud-stream:2.6.0"
-        api "io.github.springwolf:springwolf-sns:2.6.0"
-        api "io.github.springwolf:springwolf-sqs:2.6.0"
-        api "io.github.springwolf:springwolf-jms:2.6.0"
-        api "io.github.springwolf:springwolf-common-model-converters:2.6.0"
-        api "io.github.springwolf:springwolf-json-schema:2.6.0"
-        api "io.github.springwolf:springwolf-generic-binding:2.6.0"
-        api "io.github.springwolf:springwolf-amqp-binding:2.6.0"
-        api "io.github.springwolf:springwolf-googlepubsub-binding:2.6.0"
-        api "io.github.springwolf:springwolf-core:2.6.0"
-        api "io.github.springwolf:springwolf-asyncapi:2.6.0"
+        api "io.github.springwolf:springwolf-ui:2.7.0"
+        api "io.github.springwolf:springwolf-kafka:2.7.0"
+        api "io.github.springwolf:springwolf-amqp:2.7.0"
+        api "io.github.springwolf:springwolf-cloud-stream:2.7.0"
+        api "io.github.springwolf:springwolf-sns:2.7.0"
+        api "io.github.springwolf:springwolf-sqs:2.7.0"
+        api "io.github.springwolf:springwolf-jms:2.7.0"
+        api "io.github.springwolf:springwolf-common-model-converters:2.7.0"
+        api "io.github.springwolf:springwolf-json-schema:2.7.0"
+        api "io.github.springwolf:springwolf-generic-binding:2.7.0"
+        api "io.github.springwolf:springwolf-amqp-binding:2.7.0"
+        api "io.github.springwolf:springwolf-googlepubsub-binding:2.7.0"
+        api "io.github.springwolf:springwolf-core:2.7.0"
+        api "io.github.springwolf:springwolf-asyncapi:2.7.0"
     }
 }
