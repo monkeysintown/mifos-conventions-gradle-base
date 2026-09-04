@@ -9,7 +9,7 @@ axion-release = "1.21.3"
 aggregate-javadoc = "9.5.0"
 java-format-idea = "2.97.0"
 commons-io = "2.22.0"
-lombok = "1.18.46"
+lombok = "1.18.48"
 
 [libraries]
 commons-io = { module = "commons-io:commons-io", version.ref = "commons-io" }
