@@ -75,5 +75,6 @@ dependencies {
     implementation "media.barney.crap-java:media.barney.crap-java.gradle.plugin:0.6.4"
     implementation "io.github.usekylis.java-architecture-metrics:io.github.usekylis.java-architecture-metrics.gradle.plugin:0.1.1"
     implementation "dev.nucleusframework:dev.nucleusframework.gradle.plugin:2.5.7"
+    implementation "com.ebay.graph-analytics:com.ebay.graph-analytics.gradle.plugin:1.2.0"
     implementation "com.google.guava:guava"
 }
