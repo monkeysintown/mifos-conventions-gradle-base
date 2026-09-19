@@ -14,8 +14,8 @@ dependencies {
     api "tech.units:indriya:2.2.4"
     api "javax.measure:unit-api:2.2"
 
-    api "systems.uom:systems-unicode:2.2"
-    api "systems.uom:systems-ucum:2.2"
-    api "systems.uom:systems-quantity:2.2"
-    api "systems.uom:systems-common:2.2"
+    api "systems.uom:systems-unicode:2.2.1"
+    api "systems.uom:systems-ucum:2.2.1"
+    api "systems.uom:systems-quantity:2.2.1"
+    api "systems.uom:systems-common:2.2.1.1"
 }

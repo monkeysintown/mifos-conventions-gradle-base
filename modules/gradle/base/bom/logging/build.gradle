@@ -13,8 +13,8 @@ dependencies {
 
     // api platform("org.apache.logging.log4j:log4j-bom:2.25.3")
 
-    api "ch.qos.logback:logback-core:1.6.3"
-    api "ch.qos.logback:logback-classic:1.6.3"
+    api "ch.qos.logback:logback-core:1.6.4"
+    api "ch.qos.logback:logback-classic:1.6.4"
 
     api "org.jboss.logging:jboss-logging:3.6.3.Final"
 }

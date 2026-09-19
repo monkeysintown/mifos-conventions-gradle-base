@@ -26,9 +26,6 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v6
 
-      - name: Resolve Mifos Build Configuration
-        run: ./gradlew mifosConfigUnzip --no-daemon
-
       - name: Build with Gradle
         run: ./gradlew clean build publish --no-daemon
 

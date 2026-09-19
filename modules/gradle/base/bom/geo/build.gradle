@@ -66,7 +66,7 @@ repositories {
         api "com.graphhopper:graphhopper-reader-shp:0.12.0-pre1"
         api "com.graphhopper.external:jackson-datatype-jts:2.21.0"
 
-        api "org.bremersee:geojson-spring-data-mongodb:6.0.3"
+        api "org.bremersee:geojson-spring-data-mongodb:6.1.0"
 
         api "org.gavaghan:geodesy:1.1.3"
 
