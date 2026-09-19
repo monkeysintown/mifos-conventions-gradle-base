@@ -39,6 +39,9 @@ public class MifosGradleBaseLayoutPlugin implements Plugin<Settings> {
 
     @Override
     public void apply(Settings settings) {
+        // settings.getPlugins().apply("com.gradle.develocity");
+        settings.getPlugins().apply("com.ebay.graph-analytics");
+
         this.mifosExtension = settings.getExtensions().findByType(MifosGradleExtension.class);
 
         if(mifosExtension == null) {
@@ -170,25 +173,18 @@ public class MifosGradleBaseLayoutPlugin implements Plugin<Settings> {
 
         settings.dependencyResolutionManagement(resolutionManagement -> resolutionManagement.repositories(repositories -> {
             repositories.mavenLocal();
-            repositories.mavenCentral();
+            repositories.mavenCentral().content(descriptor -> descriptor.excludeModule("javax.media", "jai_core"));
             repositories.gradlePluginPortal();
-            repositories.maven(repository -> {
-                repository.setUrl("https://central.sonatype.com/repository/maven-snapshots");
-            });
-            repositories.maven(repository -> {
-                repository.setUrl("https://mifos.jfrog.io/artifactory/mifosx-gradle-local");
-            });
+            repositories.maven(repository -> repository.setUrl("https://central.sonatype.com/repository/maven-snapshots"));
+            repositories.maven(repository -> repository.setUrl("https://mifos.jfrog.io/artifactory/mifosx-gradle-local"));
         }));
+
         settings.getBuildscript().repositories(repositories -> {
             repositories.mavenLocal();
-            repositories.mavenCentral();
+            repositories.mavenCentral().content(descriptor -> descriptor.excludeModule("javax.media", "jai_core"));
             repositories.gradlePluginPortal();
-            repositories.maven(repository -> {
-                repository.setUrl("https://central.sonatype.com/repository/maven-snapshots");
-            });
-            repositories.maven(repository -> {
-                repository.setUrl("https://mifos.jfrog.io/artifactory/mifosx-gradle-local");
-            });
+            repositories.maven(repository -> repository.setUrl("https://central.sonatype.com/repository/maven-snapshots"));
+            repositories.maven(repository -> repository.setUrl("https://mifos.jfrog.io/artifactory/mifosx-gradle-local"));
         });
 
         settings.getBuildscript().configurations(configurations -> configurations.configureEach(configuration -> {

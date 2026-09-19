@@ -15,4 +15,6 @@ dependencies {
     api "com.github.javaparser:javaparser-symbol-solver-core:3.28.2"
     api "com.github.javaparser:javaparser-core-serialization:3.28.2"
     api "com.github.javaparser:javaparser-symbol-solver-model:3.28.2"
+
+    api "org.jruby:jruby:10.1.2.0"
 }
