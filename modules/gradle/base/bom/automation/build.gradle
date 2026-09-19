@@ -5,7 +5,7 @@ plugins {
 description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Automation"
 
 dependencies {
-    api "com.microsoft.playwright:playwright:1.62.0"
-    api "com.microsoft.playwright:driver-bundle:1.62.0"
-    api "com.microsoft.playwright:driver:1.62.0"
+    api "com.microsoft.playwright:playwright:1.63.0"
+    api "com.microsoft.playwright:driver-bundle:1.63.0"
+    api "com.microsoft.playwright:driver:1.63.0"
 }

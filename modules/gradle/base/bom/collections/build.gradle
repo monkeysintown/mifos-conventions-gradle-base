@@ -7,6 +7,6 @@ description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Collection
 dependencies {
     api "org.eclipse.collections:eclipse-collections-api:13.0.0"
     api "org.eclipse.collections:eclipse-collections:13.0.0"
-    api "com.carrotsearch:hppc:0.11.1"
+    api "com.carrotsearch:hppc:0.12.0"
     api "org.pcollections:pcollections:5.0.0"
 }

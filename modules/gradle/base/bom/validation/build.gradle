@@ -5,5 +5,5 @@ plugins {
 description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Validation"
 
 dependencies {
-    api platform("org.hibernate.validator:hibernate-validator-bom:9.1.3.Final")
+    api platform("org.hibernate.validator:hibernate-validator-bom:9.1.4.Final")
 }
