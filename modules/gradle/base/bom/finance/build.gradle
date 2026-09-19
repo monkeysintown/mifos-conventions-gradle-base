@@ -22,7 +22,7 @@ dependencies {
 
     api "com.github.xeroapi:xero-java:18.2.0"
 
-    api "com.stripe:stripe-java:33.3.0"
+    api "com.stripe:stripe-java:33.4.2"
 
     api "pl.allegro.finance:tradukisto:4.3.3"
 

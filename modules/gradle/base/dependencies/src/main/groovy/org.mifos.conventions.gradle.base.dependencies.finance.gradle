@@ -17,7 +17,7 @@ dependencies {
 
         implementation "com.github.xeroapi:xero-java:18.2.0"
 
-        implementation "com.stripe:stripe-java:33.3.0"
+        implementation "com.stripe:stripe-java:33.4.2"
 
         implementation "pl.allegro.finance:tradukisto:4.3.3"
 

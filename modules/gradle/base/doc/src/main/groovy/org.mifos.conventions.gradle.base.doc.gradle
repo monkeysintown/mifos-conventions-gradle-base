@@ -91,7 +91,7 @@ asciidoctorj {
             "vl2png": "${findProperty('mifos.asciidoc.diagram.vg.dir')}/vl2png",
     ]
 
-    jrubyVersion = "10.0.5.0"
+    jrubyVersion = "10.1.2.0"
 
     modules {
         diagram.use()
@@ -154,21 +154,12 @@ asciidoctorEditorConfig {
 }
 
 revealjs {
-    // version = "5.2.0"
+    version = "6.0.2"
 
     templateGitHub {
         organisation = "hakimel"
         repository = "reveal.js"
-        tag = "5.2.0"
-    }
-}
-
-// Optional: add extra Reveal.js plugins from GitHub
-revealjsPlugins {
-    github("rajgoel") {
-        setOrganisation("rajgoel")
-        setRepository("reveal.js-plugins")
-        setBranch("master")
+        tag = "6.0.2"
     }
 }
 
@@ -182,15 +173,27 @@ asciidoctorRevealJs {
         controls = true
         slideNumber = "c/t"
         transition = "slide"
-        theme = "black"
+        theme = "white"
         verticalCenter = true
+        pushToHistory = true
     }
 
-    plugins = ["rajgoel/chalkboard"]
-
     attributes = [
-            "source-highlighter": "highlight.js"
+        "revealjs_customtheme": "mifos-theme.css",
+        "revealjs_width": "1280",
+        "revealjs_height": "720",
+        "revealjs_margin": "0.05",
+        "revealjs_pdfSeparateFragments": "false",
+        "source-highlighter": "highlight.js",
+        "icons": "font"
     ]
+
+    resources {
+        from(sourceDir) {
+            include "mifos-theme.css"
+            include "images/**"
+        }
+    }
 }
 
 tasks.register("asciidoctorZip", Zip) {

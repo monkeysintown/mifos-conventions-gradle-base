@@ -593,3 +593,7 @@ licenses {
 codeNavigator {
     rootPackage = "org.mifos"  // default: "" (all packages)
 }
+
+architectureMetrics {
+    reportFormats("json", "csv")
+}

@@ -13,11 +13,11 @@ dependencies {
 
     api platform("org.citrusframework:citrus-bom:5.0.1")
 
-    api platform("org.instancio:instancio-bom:6.0.0")
+    api platform("org.instancio:instancio-bom:6.0.1")
 
     api platform("com.icegreen:greenmail-parent:2.1.13")
 
-    api "digital.pragmatech.testing:spring-test-profiler:0.3.0"
+    api "digital.pragmatech.testing:spring-test-profiler:0.3.1"
 
     api "io.floci:testcontainers-floci:2.16.1"
     api "io.floci:spring-boot-testcontainers-floci:2.16.1"
@@ -48,18 +48,18 @@ dependencies {
     api "org.wiremock:wiremock-grpc-extension:1.0.0-beta.5"
     api "org.wiremock:wiremock-grpc-extension-standalone:1.0.0-beta.5"
 
-    api "org.mock-server:mockserver-testing:7.6.0"
-    api "org.mock-server:mockserver-client-java:7.6.0"
-    api "org.mock-server:mockserver-core:7.6.0"
-    api "org.mock-server:mockserver-integration-testing:7.6.0"
-    api "org.mock-server:mockserver-war:7.6.0"
-    api "org.mock-server:mockserver-proxy-war:7.6.0"
-    api "org.mock-server:mockserver-netty:7.6.0"
-    api "org.mock-server:mockserver-junit-rule:7.6.0"
-    api "org.mock-server:mockserver-junit-jupiter:7.6.0"
-    api "org.mock-server:mockserver-junit-jupiter-no-dependencies:7.6.0"
-    api "org.mock-server:mockserver-spring-test-listener:7.6.0"
-    // api "org.mock-server:mockserver-spring-test-listener-no-dependencies:7.6.0"
+    api "org.mock-server:mockserver-testing:8.0.0"
+    api "org.mock-server:mockserver-client-java:8.0.0"
+    api "org.mock-server:mockserver-core:8.0.0"
+    api "org.mock-server:mockserver-integration-testing:8.0.0"
+    api "org.mock-server:mockserver-war:8.0.0"
+    api "org.mock-server:mockserver-proxy-war:8.0.0"
+    api "org.mock-server:mockserver-netty:8.0.0"
+    api "org.mock-server:mockserver-junit-rule:8.0.0"
+    api "org.mock-server:mockserver-junit-jupiter:8.0.0"
+    api "org.mock-server:mockserver-junit-jupiter-no-dependencies:8.0.0"
+    api "org.mock-server:mockserver-spring-test-listener:8.0.0"
+    // api "org.mock-server:mockserver-spring-test-listener-no-dependencies:8.0.0"
 
     api "com.github.database-rider:rider-junit5:1.44.0"
     api "com.github.database-rider:rider-spring:1.44.0"
