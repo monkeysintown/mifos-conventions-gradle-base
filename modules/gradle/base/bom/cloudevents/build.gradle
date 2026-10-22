@@ -5,5 +5,5 @@ plugins {
 description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Cloud Events"
 
 dependencies {
-    api platform("io.cloudevents:cloudevents-bom:5.0.0")
+    api platform("io.cloudevents:cloudevents-bom:5.1.0")
 }

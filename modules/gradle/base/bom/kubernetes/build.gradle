@@ -5,5 +5,5 @@ plugins {
 description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Kubernetes"
 
 dependencies {
-    api platform("io.dekorate:dekorate-bom:4.1.11")
+    api platform("io.dekorate:dekorate-bom:5.0.0")
 }

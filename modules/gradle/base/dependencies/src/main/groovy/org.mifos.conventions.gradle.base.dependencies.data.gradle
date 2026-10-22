@@ -6,8 +6,8 @@ repositories {
     dependencies {
         // implementation platform("com.querydsl:querydsl-bom:5.1.0")
         implementation platform("io.github.openfeign.querydsl:querydsl-bom:7.7")
-        implementation platform("com.infobip:infobip-spring-data-bom:11.0.0")
-        implementation platform("org.hibernate.orm:hibernate-platform:7.4.11.Final")
+        implementation platform("com.infobip:infobip-spring-data-bom:11.0.1")
+        implementation platform("org.hibernate.orm:hibernate-platform:7.4.13.Final")
         // implementation platform("org.hibernate.search:hibernate-search-bom:8.4.0")
         // implementation platform("org.hibernate.ogm:hibernate-ogm-bom:5.4.2")
 
@@ -78,36 +78,36 @@ repositories {
                 }
             }
 
-            implementation "org.hibernate.reactive:hibernate-reactive-core:4.5.8.Final"
+            implementation "org.hibernate.reactive:hibernate-reactive-core:4.5.11.Final"
 
-            implementation "software.amazon.jdbc:aws-advanced-jdbc-wrapper:4.4.0"
+            implementation "software.amazon.jdbc:aws-advanced-jdbc-wrapper:4.5.0"
 
             implementation "com.h2database:h2:2.5.252"
 
             implementation "io.r2dbc:r2dbc-h2:1.1.0.RELEASE"
 
-            implementation "org.postgresql:postgresql:42.7.13"
+            implementation "org.postgresql:postgresql:42.7.14"
             implementation "org.postgresql:r2dbc-postgresql:1.1.3.RELEASE"
-            implementation "com.google.cloud.sql:cloud-sql-connector-r2dbc-postgres:1.30.0"
+            implementation "com.google.cloud.sql:cloud-sql-connector-r2dbc-postgres:1.30.1"
 
             implementation "mysql:mysql-connector-java:8.0.33"
             implementation "io.asyncer:r2dbc-mysql:1.4.3"
 
-            implementation "com.google.cloud.sql:cloud-sql-connector-r2dbc-mysql:1.30.0"
+            implementation "com.google.cloud.sql:cloud-sql-connector-r2dbc-mysql:1.30.1"
 
-            implementation "org.mariadb.jdbc:mariadb-java-client:3.5.10"
+            implementation "org.mariadb.jdbc:mariadb-java-client:4.0.0"
             implementation "org.mariadb:r2dbc-mariadb:1.4.2"
-            implementation "com.google.cloud:cloud-sql-connector-r2dbc-mariadb:1.30.0"
+            implementation "com.google.cloud:cloud-sql-connector-r2dbc-mariadb:1.30.1"
 
-            implementation "com.amazon.redshift:redshift-jdbc42:2.2.9"
+            implementation "com.amazon.redshift:redshift-jdbc42:2.3.0"
 
             implementation "net.postgis:postgis-jdbc:2025.1.1"
             implementation "net.postgis:postgis-jdbc-jts:2025.1.1"
             implementation "net.postgis:postgis-jdbc-java2d:2025.1.1"
 
-            implementation "com.microsoft.sqlserver:mssql-jdbc:13.6.0.jre11"
+            implementation "com.microsoft.sqlserver:mssql-jdbc:13.6.1.jre11"
 
-            implementation "com.google.cloud.sql:cloud-sql-connector-r2dbc-sqlserver:1.30.0"
+            implementation "com.google.cloud.sql:cloud-sql-connector-r2dbc-sqlserver:1.30.1"
 
             implementation "io.codenotary:immudb4j:1.0.1"
 
@@ -140,14 +140,14 @@ repositories {
             annotationProcessor "io.github.openfeign.querydsl:querydsl-apt:7.3.0"
             testAnnotationProcessor "io.github.openfeign.querydsl:querydsl-apt:7.3.0"
 
-            implementation "org.javers:javers-spring-jpa:7.11.8"
-            implementation "org.javers:javers-spring:7.11.8"
-            implementation "org.javers:javers-spring-mongo:7.11.8"
-            implementation "org.javers:javers-persistence-mongo:7.11.8"
-            implementation "org.javers:javers-spring-boot-starter-mongo:7.11.8"
-            implementation "org.javers:javers-core:7.11.8"
-            implementation "org.javers:javers-persistence-sql:7.11.8"
-            implementation "org.javers:javers-spring-boot-starter-sql:7.11.8"
+            implementation "org.javers:javers-spring-jpa:7.11.9"
+            implementation "org.javers:javers-spring:7.11.9"
+            implementation "org.javers:javers-spring-mongo:7.11.9"
+            implementation "org.javers:javers-persistence-mongo:7.11.9"
+            implementation "org.javers:javers-spring-boot-starter-mongo:7.11.9"
+            implementation "org.javers:javers-core:7.11.9"
+            implementation "org.javers:javers-persistence-sql:7.11.9"
+            implementation "org.javers:javers-spring-boot-starter-sql:7.11.9"
         }
     }
 }

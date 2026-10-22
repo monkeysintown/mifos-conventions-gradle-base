@@ -12,7 +12,7 @@ dependencies {
 
     // api platform("org.bsc.langgraph4j:langgraph4j-bom:1.6.2")
 
-    api platform("ai.timefold.solver:timefold-solver-bom:2.7.0")
+    api platform("ai.timefold.solver:timefold-solver-bom:2.7.1")
 
     api platform("org.kie:bom:10.2.0")
 

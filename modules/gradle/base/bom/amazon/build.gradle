@@ -5,8 +5,8 @@ plugins {
 description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Amazon"
 
 dependencies {
-    api platform("software.amazon.awssdk:bom:2.55.6")
+    api platform("software.amazon.awssdk:bom:2.57.2")
 
-    api "software.amazon.awssdk.crt:aws-crt:0.48.4"
-    api "software.amazon.awssdk.crt:aws-crt-android:0.48.4"
+    api "software.amazon.awssdk.crt:aws-crt:0.49.0"
+    api "software.amazon.awssdk.crt:aws-crt-android:0.49.0"
 }

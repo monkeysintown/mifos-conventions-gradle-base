@@ -6,7 +6,7 @@ dependencies {
 
     // implementation platform("org.bsc.langgraph4j:langgraph4j-bom:1.6.2")
 
-    implementation platform("ai.timefold.solver:timefold-solver-bom:2.7.0")
+    implementation platform("ai.timefold.solver:timefold-solver-bom:2.7.1")
 
     implementation platform("org.kie:bom:10.2.0")
 

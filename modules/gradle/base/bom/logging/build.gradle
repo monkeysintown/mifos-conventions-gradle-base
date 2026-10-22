@@ -9,12 +9,12 @@ configurations.all {
 }
 
 dependencies {
-    api platform("org.slf4j:slf4j-bom:2.0.18")
+    api platform("org.slf4j:slf4j-bom:2.0.20")
 
     // api platform("org.apache.logging.log4j:log4j-bom:2.25.3")
 
-    api "ch.qos.logback:logback-core:1.6.4"
-    api "ch.qos.logback:logback-classic:1.6.4"
+    api "ch.qos.logback:logback-core:1.6.5"
+    api "ch.qos.logback:logback-classic:1.6.5"
 
     api "org.jboss.logging:jboss-logging:3.6.3.Final"
 }

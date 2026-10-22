@@ -16,17 +16,17 @@ dependencies {
         implementation "tech.tablesaw:tablesaw-jsplot:0.44.4"
         // implementation "tech.tablesaw:tablesaw-smile:0.32.1"
 
-        implementation "com.github.haifengl:smile-kotlin:6.3.0"
-        implementation "com.github.haifengl:smile-json_3:6.3.0"
-        implementation "com.github.haifengl:smile-scala_3:6.3.0"
-        implementation "com.github.haifengl:smile-scala_2.13:6.3.0"
-        implementation "com.github.haifengl:smile-nlp:6.3.0"
-        implementation "com.github.haifengl:smile-core:6.3.0"
-        implementation "com.github.haifengl:smile-base:6.3.0"
-        implementation "com.github.haifengl:smile-deep:6.3.0"
-        implementation "com.github.haifengl:smile-plot:6.3.0"
-        implementation "com.github.haifengl:smile-json_2.13:6.3.0"
-        implementation "com.github.haifengl:smile-spark_2.13:6.3.0"
+        implementation "com.github.haifengl:smile-kotlin:7.1.0"
+        implementation "com.github.haifengl:smile-json_3:7.1.0"
+        implementation "com.github.haifengl:smile-scala_3:7.1.0"
+        implementation "com.github.haifengl:smile-scala_2.13:7.1.0"
+        implementation "com.github.haifengl:smile-nlp:7.1.0"
+        implementation "com.github.haifengl:smile-core:7.1.0"
+        implementation "com.github.haifengl:smile-base:7.1.0"
+        implementation "com.github.haifengl:smile-deep:7.1.0"
+        implementation "com.github.haifengl:smile-plot:7.1.0"
+        implementation "com.github.haifengl:smile-json_2.13:7.1.0"
+        implementation "com.github.haifengl:smile-spark_2.13:7.1.0"
         implementation "com.github.haifengl:smile-mkl:3.0.3"
         implementation "com.github.haifengl:smile-data:2.6.0"
         implementation "com.github.haifengl:smile-io:2.6.0"
@@ -50,7 +50,7 @@ dependencies {
 
         implementation "org.decimal4j:decimal4j:1.0.3"
 
-        implementation "org.ojalgo:ojalgo:57.3.1"
+        implementation "org.ojalgo:ojalgo:57.5.0"
 
         implementation "org.apfloat:apfloat:1.16.0"
 

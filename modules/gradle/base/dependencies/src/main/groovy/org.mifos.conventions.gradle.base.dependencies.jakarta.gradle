@@ -1,13 +1,13 @@
 dependencies {
     implementation platform("org.glassfish.jaxb:jaxb-bom:4.0.9")
 
-    implementation platform("org.glassfish.hk2:hk2:4.0.2") {
+    implementation platform("org.glassfish.hk2:hk2:4.0.3") {
         exclude group: "com.google.inject", module: "guice"
         exclude group: "junit", module: "junit"
     }
-    implementation platform("org.glassfish.jersey:jersey-bom:4.0.2")
+    implementation platform("org.glassfish.jersey:jersey-bom:4.0.3")
 
-    implementation platform("org.apache.cxf:cxf-bom:4.2.3")
+    implementation platform("org.apache.cxf:cxf-bom:4.2.4")
 
     implementation platform("com.sun.xml.bind:jaxb-bom-ext:4.0.6")
 

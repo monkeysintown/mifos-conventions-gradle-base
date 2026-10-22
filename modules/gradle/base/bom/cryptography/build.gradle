@@ -19,7 +19,7 @@ dependencies {
     api "org.bouncycastle:bcpkix-lts8on:2.73.13"
     api "org.bouncycastle:bctls-lts8on:2.73.13"
     api "org.bouncycastle:bcutil-lts8on:2.73.13"
-    api "org.bouncycastle:bctls-fips:2.1.24"
+    api "org.bouncycastle:bctls-fips:2.1.25"
 
     api "org.pgpainless:pgpainless-core:2.0.4"
     api "org.pgpainless:pgpainless-sop:2.0.4"

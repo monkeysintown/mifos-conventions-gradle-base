@@ -7,13 +7,13 @@ description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Jakarta"
 dependencies {
     api platform("org.glassfish.jaxb:jaxb-bom:4.0.9")
 
-    api platform("org.glassfish.hk2:hk2:4.0.2") {
+    api platform("org.glassfish.hk2:hk2:4.0.3") {
         exclude group: "com.google.inject", module: "guice"
         exclude group: "junit", module: "junit"
     }
-    api platform("org.glassfish.jersey:jersey-bom:4.0.2")
+    api platform("org.glassfish.jersey:jersey-bom:4.0.3")
 
-    api platform("org.apache.cxf:cxf-bom:4.2.3")
+    api platform("org.apache.cxf:cxf-bom:4.2.4")
 
     api platform("com.sun.xml.bind:jaxb-bom-ext:4.0.6")
 
