@@ -31,7 +31,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath "io.freefair.aggregate-javadoc:io.freefair.aggregate-javadoc.gradle.plugin:9.7.0"
+        classpath "io.freefair.aggregate-javadoc:io.freefair.aggregate-javadoc.gradle.plugin:9.8.2"
         classpath "com.palantir.java-format-idea:com.palantir.java-format-idea.gradle.plugin:2.102.0"
         classpath "com.github.ben-manes.versions:com.github.ben-manes.versions.gradle.plugin:0.66.0"
         classpath "com.autonomousapps.dependency-analysis:com.autonomousapps.dependency-analysis.gradle.plugin:3.19.2"
