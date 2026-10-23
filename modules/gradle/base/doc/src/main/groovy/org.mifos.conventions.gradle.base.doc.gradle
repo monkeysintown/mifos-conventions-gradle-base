@@ -2,12 +2,12 @@ plugins {
     id "base"
     // id "maven-publish"
     id "org.mifos.conventions.gradle.base.core"
-    id "org.asciidoctor.jvm.convert"
-    id "org.asciidoctor.jvm.pdf"
-    id "org.asciidoctor.jvm.gems"
-    id "org.asciidoctor.jvm.epub"
-    id "org.asciidoctor.jvm.revealjs"
-    id "org.asciidoctor.editorconfig"
+    id "org.asciidoctor.jvm.convert.classic"
+    id "org.asciidoctor.jvm.pdf.classic"
+    id "org.asciidoctor.jvm.gems.classic"
+    id "org.asciidoctor.jvm.epub.classic"
+    id "org.asciidoctor.jvm.revealjs.classic"
+    id "org.asciidoctor.editorconfig.classic"
 }
 
 configurations {
@@ -95,11 +95,11 @@ asciidoctorj {
 
     modules {
         diagram.use()
-        //diagram.version "3.2.1"
+        // diagram.version "3.2.1"
         pdf.use()
-        pdf.version = "2.3.23"
+        // pdf.version = "2.3.23"
         epub.use()
-        epub.version = "2.2.0"
+        // epub.version = "2.2.0"
         // revealjs.use()
     }
 
