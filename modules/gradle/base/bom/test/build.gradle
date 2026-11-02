@@ -13,9 +13,9 @@ dependencies {
 
     api platform("org.citrusframework:citrus-bom:5.1.0")
 
-    api platform("org.instancio:instancio-bom:6.1.0")
+    api platform("org.instancio:instancio-bom:6.2.1")
 
-    api platform("com.icegreen:greenmail-parent:2.1.14")
+    api platform("com.icegreen:greenmail-parent:2.1.15")
 
     api "digital.pragmatech.testing:spring-test-profiler:0.4.0"
 
@@ -34,8 +34,8 @@ dependencies {
     api "org.hamcrest:hamcrest-all:1.3"
     api "org.exparity:hamcrest-date:2.0.8"
 
-    api "io.rest-assured:rest-assured:6.2.0"
-    api "io.rest-assured:json-schema-validator:6.2.0"
+    api "io.rest-assured:rest-assured:6.3.0"
+    api "io.rest-assured:json-schema-validator:6.3.0"
 
     api "org.mockito:mockito-core:5.24.0"
     api "org.mockito:mockito-junit-jupiter:5.24.0"
@@ -48,18 +48,18 @@ dependencies {
     api "org.wiremock:wiremock-grpc-extension:1.0.0-beta.5"
     api "org.wiremock:wiremock-grpc-extension-standalone:1.0.0-beta.5"
 
-    api "org.mock-server:mockserver-testing:9.1.0"
-    api "org.mock-server:mockserver-client-java:9.1.0"
-    api "org.mock-server:mockserver-core:9.1.0"
-    api "org.mock-server:mockserver-integration-testing:9.1.0"
-    api "org.mock-server:mockserver-war:9.1.0"
-    api "org.mock-server:mockserver-proxy-war:9.1.0"
-    api "org.mock-server:mockserver-netty:9.1.0"
-    api "org.mock-server:mockserver-junit-rule:9.1.0"
-    api "org.mock-server:mockserver-junit-jupiter:9.1.0"
-    api "org.mock-server:mockserver-junit-jupiter-no-dependencies:9.1.0"
-    api "org.mock-server:mockserver-spring-test-listener:9.1.0"
-    // api "org.mock-server:mockserver-spring-test-listener-no-dependencies:9.1.0"
+    api "org.mock-server:mockserver-testing:9.2.0"
+    api "org.mock-server:mockserver-client-java:9.2.0"
+    api "org.mock-server:mockserver-core:9.2.0"
+    api "org.mock-server:mockserver-integration-testing:9.2.0"
+    api "org.mock-server:mockserver-war:9.2.0"
+    api "org.mock-server:mockserver-proxy-war:9.2.0"
+    api "org.mock-server:mockserver-netty:9.2.0"
+    api "org.mock-server:mockserver-junit-rule:9.2.0"
+    api "org.mock-server:mockserver-junit-jupiter:9.2.0"
+    api "org.mock-server:mockserver-junit-jupiter-no-dependencies:9.2.0"
+    api "org.mock-server:mockserver-spring-test-listener:9.2.0"
+    // api "org.mock-server:mockserver-spring-test-listener-no-dependencies:9.2.0"
 
     api "com.github.database-rider:rider-junit5:1.44.0"
     api "com.github.database-rider:rider-spring:1.44.0"

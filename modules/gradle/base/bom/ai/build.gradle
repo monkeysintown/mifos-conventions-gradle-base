@@ -5,20 +5,20 @@ plugins {
 description = "Mifos Initiative - Conventions - Gradle - Base - BOM - AI"
 
 dependencies {
-    api platform("org.springframework.ai:spring-ai-bom:2.0.1")
+    api platform("org.springframework.ai:spring-ai-bom:2.0.2")
 
     // api platform("dev.langchain4j:langchain4j-bom:1.4.0")
     // api platform("dev.langchain4j:langchain4j-community-bom:1.4.0-beta10")
 
     // api platform("org.bsc.langgraph4j:langgraph4j-bom:1.6.2")
 
-    api platform("ai.timefold.solver:timefold-solver-bom:2.7.1")
+    api platform("ai.timefold.solver:timefold-solver-bom:2.8.0-rc-1")
 
     api platform("org.kie:bom:10.2.0")
 
     api platform("org.drools:drools-bom:10.2.0")
 
-    api platform("com.embabel.agent:embabel-agent-dependencies:1.5.2")
+    api platform("com.embabel.agent:embabel-agent-dependencies:1.5.4")
 
     api "net.sourceforge.tess4j:tess4j:5.20.0"
 

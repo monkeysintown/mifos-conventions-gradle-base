@@ -5,8 +5,8 @@ plugins {
 description = "Mifos Initiative - Conventions - Gradle - Base - BOM - I18N"
 
 dependencies {
-    api "com.ibm.icu:icu4j:78.3"
+    api "com.ibm.icu:icu4j:79.1"
 
-    api "com.googlecode.libphonenumber:libphonenumber:9.0.41"
-    api "com.googlecode.libphonenumber:prefixmapper:3.41"
+    api "com.googlecode.libphonenumber:libphonenumber:9.0.42"
+    api "com.googlecode.libphonenumber:prefixmapper:3.42"
 }

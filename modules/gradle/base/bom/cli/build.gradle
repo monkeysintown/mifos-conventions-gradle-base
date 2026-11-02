@@ -5,7 +5,7 @@ plugins {
 description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Command Line"
 
 dependencies {
-    api platform("dev.tamboui:tamboui-bom:0.5.0")
+    api platform("dev.tamboui:tamboui-bom:0.6.0")
 
     // api platform("org.apache.maven.resolver:maven-resolver:2.0.21")
     api platform("org.apache.maven.resolver:maven-resolver:1.9.27")
@@ -26,7 +26,7 @@ dependencies {
     api "org.jline:jline:4.4.8"
     api "org.jline:jline-terminal-ffm:4.4.8"
     api "org.jline:jline-terminal-jni:4.4.8"
-    api "org.jline:jline-terminal-jna:4.4.8"
+    api "org.jline:jline-terminal-jna:3.30.17"
     api "org.jline:jline-reader:4.4.8"
     api "org.jline:jline-builtins:4.4.8"
     api "org.jline:jline-console:4.4.8"

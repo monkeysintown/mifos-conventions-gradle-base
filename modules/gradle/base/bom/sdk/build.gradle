@@ -16,7 +16,7 @@ dependencies {
 
     api "com.hubspot:NioSmtpClient:1.2.3"
 
-    api "com.slack.api:slack-api-client:1.52.0"
+    api "com.slack.api:slack-api-client:1.53.0"
 
     api "io.vertx:vertx-mail-client:5.2.2"
 }

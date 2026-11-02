@@ -1,5 +1,5 @@
 dependencies {
-    implementation platform("dev.tamboui:tamboui-bom:0.5.0")
+    implementation platform("dev.tamboui:tamboui-bom:0.6.0")
 
     // implementation platform("org.apache.maven.resolver:maven-resolver:2.0.21")
     implementation platform("org.apache.maven.resolver:maven-resolver:1.9.27")
@@ -7,7 +7,7 @@ dependencies {
     implementation platform("org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-bom:3.3.7")
 
     constraints {
-        annotationProcessor "dev.tamboui:tamboui-processor:0.5.0"
+        annotationProcessor "dev.tamboui:tamboui-processor:0.6.0"
 
         // implementation "org.apache.maven:maven-resolver-provider:4.0.0-rc-6"
         implementation "org.apache.maven:maven-resolver-provider:3.9.16"
@@ -24,7 +24,7 @@ dependencies {
         implementation "org.jline:jline:4.4.8"
         implementation "org.jline:jline-terminal-ffm:4.4.8"
         implementation "org.jline:jline-terminal-jni:4.4.8"
-        implementation "org.jline:jline-terminal-jna:4.4.8"
+        implementation "org.jline:jline-terminal-jna:3.30.17"
         implementation "org.jline:jline-reader:4.4.8"
         implementation "org.jline:jline-builtins:4.4.8"
         implementation "org.jline:jline-console:4.4.8"

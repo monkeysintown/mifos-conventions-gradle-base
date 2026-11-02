@@ -9,7 +9,7 @@ dependencies {
 
     implementation platform("org.jboss.resteasy:resteasy-bom:7.0.5.Final")
 
-    implementation platform("io.swagger.core.v3:swagger-bom:2.2.55")
+    implementation platform("io.swagger.core.v3:swagger-bom:3.0.0")
 
     constraints {
         implementation "net.devh:grpc-server-spring-boot-starter:3.1.0.RELEASE"

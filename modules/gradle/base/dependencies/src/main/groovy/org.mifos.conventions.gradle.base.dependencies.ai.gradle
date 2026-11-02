@@ -1,18 +1,18 @@
 dependencies {
-    implementation platform("org.springframework.ai:spring-ai-bom:2.0.1")
+    implementation platform("org.springframework.ai:spring-ai-bom:2.0.2")
 
     // implementation platform("dev.langchain4j:langchain4j-bom:1.4.0")
     // implementation platform("dev.langchain4j:langchain4j-community-bom:1.4.0-beta10")
 
     // implementation platform("org.bsc.langgraph4j:langgraph4j-bom:1.6.2")
 
-    implementation platform("ai.timefold.solver:timefold-solver-bom:2.7.1")
+    implementation platform("ai.timefold.solver:timefold-solver-bom:2.8.0-rc-1")
 
     implementation platform("org.kie:bom:10.2.0")
 
     implementation platform("org.drools:drools-bom:10.2.0")
 
-    implementation platform("com.embabel.agent:embabel-agent-dependencies:1.5.2")
+    implementation platform("com.embabel.agent:embabel-agent-dependencies:1.5.4")
 
     constraints {
         implementation "net.sourceforge.tess4j:tess4j:5.20.0"

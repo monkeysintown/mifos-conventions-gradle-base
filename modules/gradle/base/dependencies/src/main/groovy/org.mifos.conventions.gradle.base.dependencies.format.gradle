@@ -1,5 +1,5 @@
 dependencies {
-    implementation platform("org.apache.tika:tika-bom:4.1.0")
+    implementation platform("org.apache.tika:tika-bom:4.2.0")
 
     constraints {
         implementation "com.opencsv:opencsv:5.12.0"
