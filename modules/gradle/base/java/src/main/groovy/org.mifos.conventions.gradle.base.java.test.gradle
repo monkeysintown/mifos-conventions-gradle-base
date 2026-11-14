@@ -6,6 +6,7 @@ plugins {
     // id "jacoco-aggregation"
     id "se.thinkcode.cucumber-runner"
     id "com.arc-e-tect.gherkin-to-asciidoc"
+    id "me.champeau.jmh"
 }
 
 /*
