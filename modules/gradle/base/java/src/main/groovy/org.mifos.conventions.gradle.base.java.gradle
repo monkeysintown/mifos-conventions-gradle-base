@@ -23,6 +23,7 @@ dependencies {
     implementation "com.ibm.icu:icu4j"
     implementation "jakarta.annotation:jakarta.annotation-api"
     implementation "com.github.therapi:therapi-runtime-javadoc"
+    api "org.jspecify:jspecify"
     api "org.eclipse.collections:eclipse-collections-api"
     api "org.eclipse.collections:eclipse-collections"
     api "org.eclipse.collections:eclipse-collections-forkjoin"

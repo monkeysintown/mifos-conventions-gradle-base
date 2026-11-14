@@ -67,5 +67,24 @@ dependencies {
         implementation "com.twelvemonkeys.imageio:servlet-jakarta:3.15.3"
 
         implementation "io.github.seujorgenochurras:image-to-ascii:0.0.5"
+
+        implementation "net.sourceforge.plantuml:plantuml:1.2026.10"
+
+        implementation "dev.kuml:kuml-core-script:0.56.0"
+        implementation "dev.kuml:kuml-core-config:0.56.0"
+        implementation "dev.kuml:kuml-layout-elk:0.56.0"
+        implementation "dev.kuml:kuml-io-svg:0.56.0"
+        implementation "dev.kuml:kuml-io-png:0.56.0"
+        implementation "dev.kuml:kuml-core-ocl:0.56.0"
+        implementation "dev.kuml:kuml-gen-kotlin:0.56.0"
+        implementation "dev.kuml:kuml-gen-java:0.56.0"
+        implementation "dev.kuml:kuml-gen-sql:0.56.0"
+        implementation "dev.kuml:kuml-runtime-core:0.56.0"
+        implementation "dev.kuml:kuml-asciidoc:0.56.0"
+        implementation "dev.kuml:kuml-profile-soaml:0.56.0"
+        implementation "dev.kuml:kuml-profile-javaee:0.56.0"
+        implementation "dev.kuml:kuml-profile-spring:0.56.0"
+        implementation "dev.kuml:kuml-profile-openapi:0.56.0"
+        implementation "dev.kuml:kuml-profile-autosar:0.56.0"
     }
 }
