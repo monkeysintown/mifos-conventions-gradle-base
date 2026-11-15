@@ -32,8 +32,6 @@ dependencies {
 
     api "org.projectlombok:lombok:1.18.48"
 
-    api "io.soabase.record-builder:record-builder-core:53"
-
     api "com.github.therapi:therapi-runtime-javadoc:0.16.0"
     api "com.github.therapi:therapi-runtime-javadoc-scribe:0.16.0"
 

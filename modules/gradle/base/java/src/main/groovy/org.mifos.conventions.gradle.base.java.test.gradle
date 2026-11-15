@@ -81,6 +81,16 @@ cucumber {
     main = "cucumber.api.cli.Main"
 }
 
+jmh {
+    jmhVersion = "1.37"
+    profilers = ["gc"]
+}
+
+tasks.named("compileJmhJava") {
+    options.compilerArgs.remove("-proc:none")
+    options.compilerArgs.add("-proc:full")
+}
+
 dependencies {
     testImplementation "org.junit.platform:junit-platform-suite"
 
@@ -94,6 +104,8 @@ dependencies {
     testImplementation "org.assertj:assertj-core"
 
     testImplementation "org.mockito:mockito-junit-jupiter"
+
+    jmhAnnotationProcessor "org.openjdk.jmh:jmh-generator-annprocess:1.37"
 
     // cucumberRuntime "io.cucumber:cucumber-java"
 }

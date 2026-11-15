@@ -29,11 +29,7 @@ dependencies {
         annotationProcessor "org.projectlombok:lombok:1.18.48"
         testAnnotationProcessor "org.projectlombok:lombok:1.18.48"
 
-        annotationProcessor "org.immutables:value-processor:2.12.1"
-
-        implementation "io.soabase.record-builder:record-builder-core:53"
-        annotationProcessor "io.soabase.record-builder:record-builder-processor:52"
-        testAnnotationProcessor "io.soabase.record-builder:record-builder-processor:52"
+        annotationProcessor "org.immutables:value-processor:2.12.3"
 
         implementation "com.github.therapi:therapi-runtime-javadoc:0.16.0"
         annotationProcessor "com.github.therapi:therapi-runtime-javadoc-scribe:0.16.0"
