@@ -20,11 +20,11 @@ plugins {
     // id "com.palantir.java-format-spotless"
 }
 
-ext["checkstyleVersion"] = "13.8.0"
+ext["checkstyleVersion"] = "14.4.0"
 
 tasks.withType(JavaCompile).configureEach {
     options.errorprone {
-        enabled = project.gradle.startParameter.taskNames.contains('build') || project.gradle.startParameter.taskNames.contains('check')
+        enabled = project.gradle.startParameter.taskNames.contains("build") || project.gradle.startParameter.taskNames.contains("check")
         disableWarningsInGeneratedCode = true
         allErrorsAsWarnings = true
         excludedPaths = ".*/build/.*"

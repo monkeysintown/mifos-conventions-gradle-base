@@ -30,6 +30,7 @@ dependencies {
         testAnnotationProcessor "org.projectlombok:lombok:1.18.48"
 
         annotationProcessor "org.immutables:value-processor:2.12.3"
+        annotationProcessor "org.immutables:value:2.12.3"
 
         implementation "com.github.therapi:therapi-runtime-javadoc:0.16.0"
         annotationProcessor "com.github.therapi:therapi-runtime-javadoc-scribe:0.16.0"

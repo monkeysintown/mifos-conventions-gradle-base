@@ -32,11 +32,11 @@ dependencies {
     compileOnly "com.google.code.findbugs:jsr305"
     compileOnly "org.projectlombok:lombok"
     compileOnly "com.google.errorprone:error_prone_annotations"
-    compileOnly "org.immutables:value-annotations"
-    compileOnly "org.immutables:serial"
+    implementation "org.immutables:value-annotations"
     testCompileOnly "org.projectlombok:lombok"
     annotationProcessor "org.projectlombok:lombok"
     annotationProcessor "com.github.therapi:therapi-runtime-javadoc-scribe"
     annotationProcessor "org.immutables:value-processor"
+    annotationProcessor "org.immutables:value"
     testAnnotationProcessor "org.projectlombok:lombok"
 }

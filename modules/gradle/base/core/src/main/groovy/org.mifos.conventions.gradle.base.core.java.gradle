@@ -21,7 +21,8 @@ tasks.sourcesJar.dependsOn.add(tasks.named("generateGitProperties").get())
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = "UTF-8"
-    options.fork = false
+    options.fork = true
+    options.forkOptions.jvmArgs << "--sun-misc-unsafe-memory-access=allow" // NOTE: because of Lombok annotations
     options.incremental = true
     options.deprecation = true
 
