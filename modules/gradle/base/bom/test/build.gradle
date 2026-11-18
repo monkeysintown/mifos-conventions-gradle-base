@@ -9,6 +9,8 @@ dependencies {
 
     api platform("org.testcontainers:testcontainers-bom:2.0.5")
 
+    api platform("io.floci:testcontainers-floci-bom:2.17.0")
+
     api platform("io.cucumber:cucumber-bom:8.0.4")
 
     api platform("org.citrusframework:citrus-bom:5.1.0")
@@ -19,8 +21,7 @@ dependencies {
 
     api "digital.pragmatech.testing:spring-test-profiler:0.4.0"
 
-    api "io.floci:testcontainers-floci:2.17.0"
-    api "io.floci:spring-boot-testcontainers-floci:2.17.0"
+    api "io.floci:spring-boot-testcontainers-floci:2.16.1"
 
     api "io.cucumber:query:16.1.1"
 

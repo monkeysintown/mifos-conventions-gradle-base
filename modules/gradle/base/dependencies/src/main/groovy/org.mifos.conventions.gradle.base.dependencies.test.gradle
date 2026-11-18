@@ -3,6 +3,8 @@ dependencies {
 
     implementation platform("org.testcontainers:testcontainers-bom:2.0.5")
 
+    implementation platform("io.floci:testcontainers-floci-bom:2.17.0")
+
     implementation platform("io.cucumber:cucumber-bom:8.0.4")
 
     implementation platform("org.citrusframework:citrus-bom:5.1.0")
@@ -14,8 +16,7 @@ dependencies {
     constraints {
         implementation "digital.pragmatech.testing:spring-test-profiler:0.4.0"
 
-        implementation "io.floci:testcontainers-floci:2.17.0"
-        implementation "io.floci:spring-boot-testcontainers-floci:2.17.0"
+        implementation "io.floci:spring-boot-testcontainers-floci:2.16.1"
 
         implementation "io.cucumber:query:16.1.1"
 
