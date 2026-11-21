@@ -5,8 +5,8 @@ plugins {
 description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Template"
 
 dependencies {
-    api "io.pebbletemplates:pebble:4.1.2"
-    api "io.pebbletemplates:pebble-spring-boot-starter:4.1.2"
+    api "io.pebbletemplates:pebble:4.1.3"
+    api "io.pebbletemplates:pebble-spring-boot-starter:4.1.3"
 
     api "com.github.jknack:handlebars.java:4.5.8"
     api "com.github.jknack:handlebars:4.5.8"

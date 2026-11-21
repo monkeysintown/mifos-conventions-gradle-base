@@ -6,7 +6,7 @@ description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Math"
 
 dependencies {
     api platform("org.matheclipse:matheclipse:3.2.0")
-    api(platform("org.hipparchus:hipparchus:4.0.3")) {
+    api(platform("org.hipparchus:hipparchus:4.1")) {
         exclude group: "junit", module: "junit"
     }
     api platform("org.dflib:dflib-bom:2.0.0-M7")
@@ -21,16 +21,16 @@ dependencies {
     api "tech.tablesaw:tablesaw-jsplot:0.44.4"
     // api "tech.tablesaw:tablesaw-smile:0.32.1"
 
-    api "com.github.haifengl:smile-kotlin:7.1.0"
-    api "com.github.haifengl:smile-json_3:7.1.0"
-    api "com.github.haifengl:smile-scala_3:7.1.0"
-    api "com.github.haifengl:smile-scala_2.13:7.1.0"
-    api "com.github.haifengl:smile-nlp:7.1.0"
-    api "com.github.haifengl:smile-core:7.1.0"
-    api "com.github.haifengl:smile-base:7.1.0"
-    api "com.github.haifengl:smile-deep:7.1.0"
-    api "com.github.haifengl:smile-plot:7.1.0"
-    api "com.github.haifengl:smile-json_2.13:7.1.0"
+    api "com.github.haifengl:smile-kotlin:7.3.0"
+    api "com.github.haifengl:smile-json_3:7.3.0"
+    api "com.github.haifengl:smile-scala_3:7.3.0"
+    api "com.github.haifengl:smile-scala_2.13:7.3.0"
+    api "com.github.haifengl:smile-nlp:7.3.0"
+    api "com.github.haifengl:smile-core:7.3.0"
+    api "com.github.haifengl:smile-base:7.3.0"
+    api "com.github.haifengl:smile-deep:7.3.0"
+    api "com.github.haifengl:smile-plot:7.3.0"
+    api "com.github.haifengl:smile-json_2.13:7.3.0"
     api "com.github.haifengl:smile-spark_2.13:6.3.0"
     api "com.github.haifengl:smile-mkl:3.0.3"
     api "com.github.haifengl:smile-data:2.6.0"
@@ -55,7 +55,7 @@ dependencies {
 
     api "org.decimal4j:decimal4j:1.0.3"
 
-    api "org.ojalgo:ojalgo:57.6.2"
+    api "org.ojalgo:ojalgo:58.0.0"
 
     api "org.apfloat:apfloat:1.16.0"
 

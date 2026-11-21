@@ -161,10 +161,10 @@ dependencies {
         checkstyle "com.github.sevntu-checkstyle:sevntu-checks:1.44.1"
     }
 
-    checkerQual "org.checkerframework:checker-qual:4.2.0"
-    checkerQual "org.checkerframework:dataflow-nullaway:4.2.0"
-    checkerQual "org.checkerframework:dataflow-errorprone:4.2.0"
-    checkerFramework "org.checkerframework:checker:4.2.0"
+    checkerQual "org.checkerframework:checker-qual:4.4.0"
+    checkerQual "org.checkerframework:dataflow-nullaway:4.4.0"
+    checkerQual "org.checkerframework:dataflow-errorprone:4.4.0"
+    checkerFramework "org.checkerframework:checker:4.4.0"
 }
 
 // owasp

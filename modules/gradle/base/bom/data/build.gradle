@@ -12,14 +12,14 @@ repositories {
     dependencies {
         // api platform("com.querydsl:querydsl-bom:5.1.0")
         api platform("io.github.openfeign.querydsl:querydsl-bom:7.7")
-        api platform("com.infobip:infobip-spring-data-bom:11.0.1")
-        api platform("org.hibernate.orm:hibernate-platform:7.4.14.Final")
+        api platform("com.infobip:infobip-spring-data-bom:11.0.2")
+        api platform("org.hibernate.orm:hibernate-platform:7.4.17.Final")
         // api platform("org.hibernate.search:hibernate-search-bom:8.4.0")
         // api platform("org.hibernate.ogm:hibernate-ogm-bom:5.4.2")
 
-        api "org.hibernate.reactive:hibernate-reactive-core:4.5.13.Final"
+        api "org.hibernate.reactive:hibernate-reactive-core:4.5.15.Final"
 
-        api "software.amazon.jdbc:aws-advanced-jdbc-wrapper:4.5.0"
+        api "software.amazon.jdbc:aws-advanced-jdbc-wrapper:4.7.0"
 
         api "com.h2database:h2:2.5.252"
 
@@ -27,16 +27,16 @@ repositories {
 
         api "org.postgresql:postgresql:42.7.14"
         api "org.postgresql:r2dbc-postgresql:1.1.3.RELEASE"
-        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-postgres:1.30.2"
+        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-postgres:1.31.0"
 
         api "mysql:mysql-connector-java:8.0.33"
         api "io.asyncer:r2dbc-mysql:1.4.3"
 
-        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-mysql:1.30.2"
+        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-mysql:1.31.0"
 
         api "org.mariadb.jdbc:mariadb-java-client:4.0.0"
         api "org.mariadb:r2dbc-mariadb:1.4.2"
-        api "com.google.cloud:cloud-sql-connector-r2dbc-mariadb:1.30.2"
+        api "com.google.cloud:cloud-sql-connector-r2dbc-mariadb:1.31.0"
 
         api "com.amazon.redshift:redshift-jdbc42:2.3.0"
 
@@ -46,7 +46,7 @@ repositories {
 
         api "com.microsoft.sqlserver:mssql-jdbc:13.6.2.jre11"
 
-        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-sqlserver:1.30.2"
+        api "com.google.cloud.sql:cloud-sql-connector-r2dbc-sqlserver:1.31.0"
 
         api "io.codenotary:immudb4j:1.0.1"
 
@@ -54,20 +54,20 @@ repositories {
         api "org.liquibase.ext:liquibase-postgresql:5.0.4"
         api "org.liquibase.ext:liquibase-mysql:5.0.4"
 
-        api "org.jooq:jooq:3.21.9"
-        api "org.jooq:jooq-checker:3.21.9"
-        api "org.jooq:jooq-migrations:3.21.9"
+        api "org.jooq:jooq:3.21.10"
+        api "org.jooq:jooq-checker:3.21.10"
+        api "org.jooq:jooq-migrations:3.21.10"
         api "org.jooq:jooq-console:3.1.0"
-        api "org.jooq:jooq-postgres-extensions:3.21.9"
+        api "org.jooq:jooq-postgres-extensions:3.21.10"
 
-        api "org.javers:javers-spring-jpa:7.11.9"
-        api "org.javers:javers-spring:7.11.9"
-        api "org.javers:javers-spring-mongo:7.11.9"
-        api "org.javers:javers-persistence-mongo:7.11.9"
-        api "org.javers:javers-spring-boot-starter-mongo:7.11.9"
-        api "org.javers:javers-core:7.11.9"
-        api "org.javers:javers-persistence-sql:7.11.9"
-        api "org.javers:javers-spring-boot-starter-sql:7.11.9"
+        api "org.javers:javers-spring-jpa:7.12.0"
+        api "org.javers:javers-spring:7.12.0"
+        api "org.javers:javers-spring-mongo:7.12.0"
+        api "org.javers:javers-persistence-mongo:7.12.0"
+        api "org.javers:javers-spring-boot-starter-mongo:7.12.0"
+        api "org.javers:javers-core:7.12.0"
+        api "org.javers:javers-persistence-sql:7.12.0"
+        api "org.javers:javers-spring-boot-starter-sql:7.12.0"
 
         constraints {
             modules {

@@ -1,5 +1,5 @@
 dependencies {
-    implementation platform("com.google.guava:guava-bom:33.7.2-jre")
+    implementation platform("com.google.guava:guava-bom:33.8.0-jre")
 
     // NOTE: do not touch, another plugin dependens on this version
     // implementation platform("com.google.inject:guice-bom:7.0.0")
@@ -9,7 +9,7 @@ dependencies {
     implementation platform("org.ow2.asm:asm-bom:9.11.1")
 
     constraints {
-        implementation "io.github.classgraph:classgraph:6.0.1"
+        implementation "io.github.classgraph:classgraph:6.0.2"
 
         implementation "org.javassist:javassist:3.33.0-GA"
 
@@ -45,8 +45,8 @@ dependencies {
 
         implementation "io.github.java-diff-utils:java-diff-utils:4.18"
 
-        implementation "org.eclipse.jgit:org.eclipse.jgit:7.8.0.202609011348-r"
-        implementation "org.eclipse.jgit:org.eclipse.jgit.ssh.jsch:7.8.0.202609011348-r"
-        implementation "org.eclipse.jgit:org.eclipse.jgit.gpg.bc:7.8.0.202609011348-r"
+        implementation "org.eclipse.jgit:org.eclipse.jgit:7.8.1.202611041320-r"
+        implementation "org.eclipse.jgit:org.eclipse.jgit.ssh.jsch:7.8.1.202611041320-r"
+        implementation "org.eclipse.jgit:org.eclipse.jgit.gpg.bc:7.8.1.202611041320-r"
     }
 }

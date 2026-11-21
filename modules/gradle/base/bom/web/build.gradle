@@ -5,17 +5,19 @@ plugins {
 description = "Mifos Initiative - Conventions - Gradle - Base - BOM - Web"
 
 dependencies {
-    api platform("org.apache.tomcat:tomcat:11.0.27")
+    api platform("org.apache.tomcat:tomcat:11.0.29")
 
-    api platform("org.eclipse.jetty:jetty-bom:12.1.14")
+    api platform("org.eclipse.jetty:jetty-bom:12.1.15")
 
     api platform("com.squareup.okhttp3:okhttp-bom:5.5.1")
 
-    api platform("io.github.openfeign:feign-bom:13.17")
+    api platform("io.github.openfeign:feign-bom:13.18")
 
-    api platform("org.jboss.resteasy:resteasy-bom:7.0.5.Final")
+    api platform("org.jboss.resteasy:resteasy-bom:7.0.6.Final")
 
     api platform("io.swagger.core.v3:swagger-bom:3.0.0")
+
+    api "io.swagger.core.v3:swagger-annotations-jakarta:2.2.56"
 
     api "net.devh:grpc-server-spring-boot-starter:3.1.0.RELEASE"
 
