@@ -6,7 +6,7 @@ plugins {
     id "base"
     id "pl.allegro.tech.build.axion-release"
     // id "io.freefair.aggregate-javadoc"
-    id "com.palantir.java-format-idea"
+    id "dev.openjavaformat.java-format-idea"
 }
 
 description = "Mifos Initiative - Conventions - Gradle"

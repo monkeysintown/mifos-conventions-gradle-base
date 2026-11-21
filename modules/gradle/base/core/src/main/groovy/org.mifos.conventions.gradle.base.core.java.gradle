@@ -23,6 +23,7 @@ tasks.withType(JavaCompile).configureEach {
     options.encoding = "UTF-8"
     options.fork = true
     options.forkOptions.jvmArgs << "--sun-misc-unsafe-memory-access=allow" // NOTE: because of Lombok annotations
+    options.forkOptions.jvmArgs << "--enable-native-access=ALL-UNNAMED"
     options.incremental = true
     options.deprecation = true
 

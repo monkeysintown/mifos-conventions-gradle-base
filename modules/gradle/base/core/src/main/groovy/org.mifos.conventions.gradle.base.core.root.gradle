@@ -2,7 +2,7 @@ plugins {
     id "base"
     // id "io.freefair.aggregate-javadoc"
     id "pl.allegro.tech.build.axion-release"
-    id "com.palantir.java-format-idea"
+    id "dev.openjavaformat.java-format-idea"
     id "media.barney.crap-java"
 }
 
