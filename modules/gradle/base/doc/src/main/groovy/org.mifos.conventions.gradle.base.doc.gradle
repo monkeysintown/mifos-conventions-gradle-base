@@ -91,7 +91,8 @@ asciidoctorj {
             "vl2png": "${findProperty('mifos.asciidoc.diagram.vg.dir')}/vl2png",
     ]
 
-    jrubyVersion = "10.1.2.0"
+    // jrubyVersion = "10.1.2.0"
+    jrubyVersion = "9.4.15.0"
 
     modules {
         diagram.use()
@@ -105,6 +106,16 @@ asciidoctorj {
 
     fatalWarnings ~/include file not found|missing callout|image to embed not found or not readable/
     fatalWarnings missingIncludes()
+}
+
+// also applies if a convention plugin or platform sets a newer JRuby later                                                                                                                                                                                                               │
+configurations.matching { it.name.startsWith('__$$asciidoctorj') }.configureEach {
+    resolutionStrategy.eachDependency { details ->
+        if (details.requested.group == "org.jruby" && details.requested.name in ["jruby", "jruby-complete"]) {
+            details.useVersion "9.4.15.0"
+            details.because "asciidoctor-pdf does not load with JRuby 10.1"
+        }
+    }
 }
 
 asciidoctor {
