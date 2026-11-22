@@ -31,6 +31,10 @@ dependencies {
     asciidoctorGems "rubygems:rouge:5.0.0"
 }
 
+// asciidoctorj 3.0.1 is built for JRuby 9.4; the YAML parser bundled with JRuby 10.1 rejects the font shims of
+// prawn-icon, so asciidoctor-pdf cannot load ("mapping values are not allowed here" in fa4/shims.yml)
+def asciidoctorJrubyVersion = "9.4.14.0"
+
 asciidoctorj {
     requires = ["rouge"]
 
@@ -91,7 +95,8 @@ asciidoctorj {
             "vl2png": "${findProperty('mifos.asciidoc.diagram.vg.dir')}/vl2png",
     ]
 
-    jrubyVersion = "10.1.2.0"
+    // jrubyVersion = "10.1.2.0"
+    jrubyVersion = asciidoctorJrubyVersion
 
     modules {
         diagram.use()
@@ -244,5 +249,15 @@ tasks.register("asciidocConfigCopy", Sync) {
     copy {
         from "${rootDir}/.mifos/config/asciidoc/.asciidoctorconfig"
         into "${projectDir}/"
+    }
+}
+
+// also applies if a convention plugin or platform sets a newer JRuby later
+configurations.matching { it.name.startsWith('__$$asciidoctorj') }.configureEach {
+    resolutionStrategy.eachDependency { details ->
+        if (details.requested.group == "org.jruby" && details.requested.name in ["jruby", "jruby-complete"]) {
+            details.useVersion asciidoctorJrubyVersion
+            details.because "asciidoctor-pdf does not load with JRuby 10.1"
+        }
     }
 }
