@@ -5,7 +5,7 @@
 ben-manes-versions = "0.66.0"
 dependencycheck = "13.0.0"
 dependency-analysis = "3.19.2"
-axion-release = "1.21.4"
+axion-release = "1.21.5"
 aggregate-javadoc = "9.5.0"
 java-format-idea = "21.0.2"
 commons-io = "2.22.0"
